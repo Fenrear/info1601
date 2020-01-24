@@ -1,12 +1,12 @@
 # Project information
-site_name: 'PWA Docs'
-site_description: 'A PWA wrapper for Material Design themed for MkDocs'
+site_name: 'INFO 1601'
+site_description: 'INFO 1601 Course Site'
 site_author: 'Nicholas Mendez'
-site_url: 'https://github.com/Snickdx/pwadocs'
+site_url: 'https://nmendez.app/info1601'
 
 # Repository
-repo_name: 'snickdx/pwadocs'
-repo_url: 'https://github.com/Snickdx/pwadocs'
+repo_name: 'uwidcit/info1601'
+repo_url: 'https://github.com/uwidcit/info1601'
 
 # Copyright
 copyright: 'Copyright &copy; 2019 Nicholas Mendez'
@@ -17,8 +17,8 @@ theme:
   language: 'en'
   custom_dir: 'theme'
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    primary: 'Blue Grey'
+    accent: 'Deep Orange'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
