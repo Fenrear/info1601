@@ -1,0 +1,536 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Lab 1 -  Intro to HTML</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid="UA-154889698-1"
+                  id="lab1"
+                  title="Lab 1 -  Intro to HTML"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Introduction" duration="5">
+        <p class="image-container"><img style="width: 378.00px" src="img\ce74439ce92d69da.png"></p>
+<h2 is-upgraded><strong>What is HTML?</strong></h2>
+<p>Websites are documents written to be accessed over the internet and rendered by the browser. Hypertext Markup Language (HTML) is the language we use to instruct the browser what elements to display and its structure. In this code lab we shall learn about the fundamentals of HTML.</p>
+<h2 class="checklist" is-upgraded><strong>What you&#39;ll learn</strong></h2>
+<ul class="checklist">
+<li>Tags &amp; Elements</li>
+<li>Attributes/Properties</li>
+<li>Section Elements</li>
+<li>Meta Elements</li>
+<li>Grouping Elements</li>
+<li>Typography Elements</li>
+<li>Interactive Elements</li>
+</ul>
+<h2 is-upgraded><strong>What you&#39;ll need</strong></h2>
+<ul>
+<li>A <a href="https://github.com/join?source=header-home" target="_blank">github</a> account.</li>
+</ul>
+<h2 is-upgraded><strong>Task 1</strong></h2>
+<p>Open the lab 1 project in codesandbox.io by clicking the button below.</p>
+<p><a href="https://repl.it/@Snickdx/INFO-1601-Lab-1" target="_blank"><paper-button class="colored" raised>Open Lab 1</paper-button></a></p>
+<p>Fork the project to make it your own.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\5eb6c4548c29c72b.png"></p>
+<p> then sign with github to be able to save changes.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\79f6c3e6b54589b0.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="HTML Tags" duration="2">
+        <p>Every html document is comprised of tags. Tags are the written representation of HTML elements which make up a page. Tags are written using the angle brackets and a tag name as specified by the <a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML 5 standard</a>.</p>
+<h2 is-upgraded><strong>Task 2</strong></h2>
+<p>Create an html document by giving a text file the extension ‘.html&#39;. Type the following into the file. Then view the file in the browser.</p>
+<p>index.html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;This my first website&lt;/p&gt;&lt;br&gt;
+        &lt;p&gt;Welcome&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>The Output Should look like:</p>
+<p class="image-container"><img style="width: 624.00px" src="img\dc1b98730322f5ff.png"></p>
+<p>Here we have our first few tags.</p>
+<ol type="1" start="1">
+<li>DOCTYPE : informs the browser the type of the document, in this case it is HTML 5</li>
+<li>html : root tag of html document</li>
+<li>head: Head of the document</li>
+<li>body: Body of the document</li>
+<li>p: Paragraph</li>
+<li>br: Breakline</li>
+</ol>
+<p> Note the structure of a tag; the tag name is in lowercase and is surrounded by angle brackets. Most tags come in pairs, the first of the pair is referred to as the <strong>opening/start tag</strong> while the second tag (note the forward slash) is called the <strong>closing/end tag</strong>. However some tags do not have a closing tab such as br (breakline). </p>
+<p>Tags that come in pairs allow us to place a tag within another, this is also called nesting. Therefore within the body tag there exists 2 paragraph tags and a break line tag. These tags are said to be children of the body tag. Likewise, the body tag is said to be the parent of the aforementioned children.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Attributes" duration="2">
+        <p>In addition to the tag name, attributes can be written in the opening tag of an element. Attributes are key value pairs which provide additional information about the element. Attributes fall into 3 categories</p>
+<h2 is-upgraded><strong>Global Attributes</strong></h2>
+<p>These are optional attributes which can be added to all tags and vary in function below are some examples.</p>
+<table>
+<tr><td colspan="1" rowspan="1"><p>Attribute</p>
+</td><td colspan="1" rowspan="1"><p>Description</p>
+</td><td colspan="1" rowspan="1"><p>Example</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>hidden</p>
+</td><td colspan="1" rowspan="1"><p>Hide the element from the document</p>
+</td><td colspan="1" rowspan="1"><p>&lt;p hidden=&#34;true&#34;&gt; ... &lt;/p&gt;</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>title</p>
+</td><td colspan="1" rowspan="1"><p>Adds a tooltip when a pointer hovers over the element</p>
+</td><td colspan="1" rowspan="1"><p>&lt;p title=&#34;my paragraph&gt; ... &lt;/p&gt;</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>style</p>
+</td><td colspan="1" rowspan="1"><p>Allows inline styling</p>
+</td><td colspan="1" rowspan="1"><p>&lt;p style=&#34;color: red&#34;&gt; ... &lt;/p&gt;</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>id</p>
+</td><td colspan="1" rowspan="1"><p>Attaches a unique identifier to the element</p>
+</td><td colspan="1" rowspan="1"><p>&lt;p id=&#34;para-1&#34;&gt; ... &lt;/p&gt;</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>class</p>
+</td><td colspan="1" rowspan="1"><p>Attach an identifier to group multiple elements</p>
+</td><td colspan="1" rowspan="1"><p>&lt;p class=&#34;header-paras&#34;&gt; ... &lt;/p&gt;</p>
+</td></tr>
+</table>
+<h2 is-upgraded><strong>Required  Attributes</strong></h2>
+<p>Some elements have attributes which must be specified and given a value. The following are some examples</p>
+<table>
+<tr><td colspan="1" rowspan="1"><p>Tag</p>
+</td><td colspan="1" rowspan="1"><p>Required Attribute</p>
+</td><td colspan="1" rowspan="1"><p>Example</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Image - img</p>
+</td><td colspan="1" rowspan="1"><p>src: Specified the source location of the image</p>
+</td><td colspan="1" rowspan="1"><p>&lt;img src=&#34;image.png&gt;&lt;/img&gt;</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>input</p>
+</td><td colspan="1" rowspan="1"><p>type: specifies the type of input element</p>
+</td><td colspan="1" rowspan="1"><p>&lt;input type=&#34;text&gt;</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Hyperlink - a</p>
+</td><td colspan="1" rowspan="1"><p>href: hyperlink reference url</p>
+</td><td colspan="1" rowspan="1"><p>&lt;a href=&#34;https://g.co&#34;&gt;&lt;/a&gt;</p>
+</td></tr>
+</table>
+<h2 is-upgraded><strong>Event Attributes</strong></h2>
+<p>These are optional attributes allows us to define some behavior in response to an event which occurs on an html element. These attributes usually begin with &#34;on&#34;</p>
+<table>
+<tr><td colspan="1" rowspan="1"><p>Attribute</p>
+</td><td colspan="1" rowspan="1"><p>Description</p>
+</td><td colspan="1" rowspan="1"><p>Example</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>onload</p>
+</td><td colspan="1" rowspan="1"><p>Fires after element has finished loading</p>
+</td><td colspan="1" rowspan="1"><p>&lt;body onload=&#34;..&#34;&gt;&lt;/body&gt;</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>onclick</p>
+</td><td colspan="1" rowspan="1"><p>Fires after an element is clicked</p>
+</td><td colspan="1" rowspan="1"><p>&lt;button onclick=&#34;...&#34;&gt;&lt;/button&gt;</p>
+</td></tr>
+</table>
+<h2 is-upgraded><strong>Task 3</strong></h2>
+<p>Update index.html as follows. We add the language attribute &#34;lang&#34; to the html element and give the the value &#34;en&#34;. This instructs the browser that the document is written in english. There would be no visible difference to the page however.</p>
+<p>index.html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+    &lt;head&gt;
+       &lt;title&gt;My First Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;This is my first website&lt;/p&gt;&lt;br&gt;
+        &lt;p&gt;Welcome&lt;/p&gt;
+    &lt;/body&gt;
+&lt;html&gt;</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Head Elements" duration="4">
+        <p>These all elements which should be children of head. We will look at the following three though they are not all.</p>
+<h2 is-upgraded><strong>Meta-data</strong></h2>
+<p>These are a class of elements which allows us to add information which help describe the web page itself as well as link other file to it. Meta-data elements must be children of the head element. Meta-data elements are written with the meta tag and must provide the attributes; name and content. <a href="https://gist.github.com/lancejpollard/1978404" target="_blank">Here</a> is a list of possible meta tags you can add to a website which would be used by different browsers or services.</p>
+<h2 is-upgraded><strong>Title</strong></h2>
+<p>The title element sets the title of the website and would be shown in the tab of the website in the browser.</p>
+<h2 is-upgraded><strong>Link</strong></h2>
+<p>The link tag is used to link external files to the website such as css files, web manifests or preloading javascript files.</p>
+<h2 is-upgraded><strong>Task 4</strong></h2>
+<p>Download <a href="https://drive.google.com/open?id=1NBtwOyPnm4k1WZ_0m3qt8n9Wk145wQ5H" target="_blank">this</a> file and place it in <strong>the same folder as index.html.</strong></p>
+<p>Update index.html as follows</p>
+<p>index.html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+    &lt;head&gt;
+      &lt;meta name=&#34;description&#34; content=&#34;My first website&#34;&gt;
+      &lt;meta name=&#34;keywords&#34; content=&#34;INFO1601, uwi, web&#34;&gt;
+      &lt;title&gt;My First Page&lt;/title&gt;
+      &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width,initial-scale=1&#34;&gt;
+      &lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;This is my first website&lt;/p&gt;&lt;br&gt;
+        &lt;p&gt;Welcome&lt;/p&gt;
+    &lt;/body&gt;
+&lt;html&gt;</code></pre>
+<p>In this snippet we&#39;ve added meta tags that provide a description of the webpage and some keywords. We also add a very important tags named viewport which makes the site readable on mobile devices. It is good practice to always have these tags on any website you build. We also added a title and linked style.css to the page. Now observe  the result.</p>
+<h2 is-upgraded><img style="width: 624.00px" src="img\e6ab2bac24c920be.png"></h2>
+<p>The title can be viewed in the tag and linking sytles.css has caused the presentation of the page to change.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Typography Elements" duration="2">
+        <p>The web was originally created to publish documents online, as such there are many text based elements available. These elements not only change the presentation of text but adds semantic context to the text for the browser.</p>
+<h2 is-upgraded><strong>Task 5</strong></h2>
+<p>Update index.html with the following elements</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+    &lt;head&gt;
+      &lt;meta name=&#34;description&#34; content=&#34;My first website&#34;&gt;
+      &lt;meta name=&#34;keywords&#34; content=&#34;INFO1601, uwi, web&#34;&gt;
+      &lt;title&gt;My First Page&lt;/title&gt;
+      &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width,initial-scale=1&#34;&gt;
+      &lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;This is my first website&lt;/h1&gt;&lt;br&gt;
+        &lt;p&gt;Welcome&lt;/p&gt;
+        &lt;b&gt;bold&lt;/b&gt; &lt;br&gt;
+        &lt;strong&gt;Strong text&lt;/strong&gt;&lt;br&gt;
+        &lt;code&gt;code&lt;/code&gt;&lt;br&gt;
+        &lt;samp&gt;Sample output from a computer program&lt;/samp&gt;&lt;br&gt;
+        &lt;kbd&gt;Keyboard input&lt;/kbd&gt;&lt;br&gt;
+        &lt;mark&gt;highlighted text&lt;/mark&gt; &lt;br&gt;
+        &lt;em&gt;Emphasized text&lt;/em&gt;&lt;br&gt;
+        &lt;var&gt;variable&lt;/var&gt; &lt;br&gt;
+        &lt;cite&gt;citation&lt;/cite&gt; &lt;br&gt;
+        &lt;dfn&gt;definition&lt;/dfn&gt; &lt;br&gt;
+        &lt;u&gt;underlined&lt;/u&gt; &lt;br&gt;
+        &lt;s&gt;strikethrough&lt;/s&gt;&lt;br&gt;
+        Text&lt;sub&gt;subscript&lt;/sub&gt;&lt;br&gt;
+        Text&lt;sup&gt;superscript&lt;/sup&gt;&lt;br&gt;
+    &lt;/body&gt;
+&lt;html&gt;</code></pre>
+<p>We tried out various typography elements and changed our first paragraph to a heading  using the heading element h1. There are 6 heading elements h1- h6 of varying sizes. The hgroup element can be used to group multiple heading elements.</p>
+<p class="image-container"><img style="width: 544.50px" src="img\d4efd68f8bf31f92.png"></p>
+<aside class="special"><p>Notice emphasize, variable, citation and definition all look the same to the user. The purpose of the tags is to hint to the browser what kind of content you are writing.</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Section Elements" duration="0">
+        <p>These elements determine the high level layout of the document. Body and Head are section elements in addition to:</p>
+<ol type="1" start="1">
+<li>Header</li>
+<li>Nav</li>
+<li>Article</li>
+<li>Aside</li>
+<li>Section</li>
+<li>Footer<br>        </li>
+</ol>
+<p>These elements are also said to be semantic. These elements by themselves would have no visual effect on the document. However, they help the developer and broswer better understand the layout of the site by recognising these tags as the building blocks of the webpage.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\4e7e8aceb7759966.png"></p>
+<h2 is-upgraded><strong>Task 6</strong></h2>
+<p>Update the site with the semantic elements.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+    &lt;head&gt;
+        &lt;meta name=&#34;description&#34; content=&#34;My first website&#34;&gt;
+        &lt;meta name=&#34;keywords&#34; content=&#34;INFO1601, uwi, web&#34;&gt;
+        &lt;title&gt;My First Page&lt;/title&gt;
+        &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width,initial-scale=1&#34;&gt;
+        &lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;This is my first website&lt;/h1&gt;
+        &lt;/header&gt;
+
+        &lt;article&gt;
+            &lt;section&gt;
+                &lt;p&gt;Welcome&lt;/p&gt;
+            &lt;/section&gt;
+
+            &lt;section&gt;
+                &lt;b&gt;bold&lt;/b&gt; &lt;br&gt;
+                &lt;strong&gt;Strong text&lt;/strong&gt;&lt;br&gt;
+                &lt;mark&gt;highlighted text&lt;/mark&gt; &lt;br&gt;
+                &lt;u&gt;underlined&lt;/u&gt; &lt;br&gt;
+                &lt;s&gt;strikethrough&lt;/s&gt;
+                Text&lt;sub&gt;subscript&lt;/sub&gt;&lt;br&gt;
+                Text&lt;sup&gt;superscript&lt;/sup&gt;&lt;br&gt;
+        
+            &lt;/section&gt;
+
+            &lt;section&gt;
+                &lt;code&gt;code&lt;/code&gt;&lt;br&gt;
+                &lt;samp&gt;Sample output from a computer program&lt;/samp&gt;&lt;br&gt;
+                &lt;kbd&gt;Keyboard input&lt;/kbd&gt;
+            &lt;/section&gt;
+
+            &lt;section&gt;
+                &lt;em&gt;Emphasized text&lt;/em&gt;&lt;br&gt;
+                &lt;var&gt;variable x&lt;/var&gt;&lt;br&gt;
+                &lt;cite&gt;citation&lt;/cite&gt;&lt;br&gt;
+                &lt;dfn&gt;definition&lt;/dfn&gt;
+            &lt;/section&gt;
+        &lt;/article&gt;
+           
+    &lt;/body&gt;
+&lt;html&gt;</code></pre>
+<p>Here we rearranged the typography into separate sections. Although the snippet is longer it is easier to read due to proper indentation and use of the semantic elements. Note that the last element in each section does not need a breakline as sections automatically start on a newline.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Content Grouping Elements (1/2)" duration="4">
+        <p>These elements are for making separators,  grouping children elements, lists and figures.</p>
+<h2 is-upgraded><strong>Thematic Breaks &lt;hr&gt;</strong></h2>
+<p>The hr tag is used to separate content as it renders a line break across the page.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\5538ec8bc28d4ca7.png"></p>
+<h2 is-upgraded><strong>Preformatting &lt;pre&gt;</strong></h2>
+<p>The pre tag would preserve any whitespaces made in the contents of the tag.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\d9f163b1e40cebf9.png"></p>
+<h2 is-upgraded><strong>Blockquote &lt;blockquote&gt;</strong></h2>
+<p>Used to quote content from another site.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\c6b4c782ac48a59f.png"></p>
+<h2 is-upgraded><strong>Figure &lt;figure&gt;</strong></h2>
+<p>The figure tag is used to embed an image on a page with a caption. Images can exist on a page for different reasons therefore the semantic element figure tells the browser to treat the image as such.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\dfe1fb955f06a353.png"></p>
+<h2 is-upgraded><strong>Task 7</strong></h2>
+<p>We can add an image of a cat to our page by adding the following image and figure tags.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+    &lt;head&gt;
+        &lt;meta name=&#34;description&#34; content=&#34;My first website&#34;&gt;
+        &lt;meta name=&#34;keywords&#34; content=&#34;INFO1601, uwi, web&#34;&gt;
+        &lt;title&gt;My First Page&lt;/title&gt;
+        &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width,initial-scale=1&#34;&gt;
+        &lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;This is my first website&lt;/h1&gt;
+        &lt;/header&gt;
+
+        &lt;article&gt;
+            &lt;section&gt;
+                &lt;h2&gt;Welcome&lt;/h2&gt;
+            &lt;/section&gt;
+
+           &lt;section&gt;
+                &lt;figure&gt;
+                    &lt;img src=&#34;https://lorempixel.com/200/200/cats&#34; alt=&#34;a random cat&#34;&gt;
+                    &lt;figcaption&gt;Fig 1. A random cat&lt;/figcaption&gt;
+                &lt;/figure&gt;
+           &lt;/section&gt;
+        &lt;/article&gt;
+           
+    &lt;/body&gt;
+&lt;html&gt;</code></pre>
+<p class="image-container"><img style="width: 624.00px" src="img\121fb1e62f91b69e.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Grouping Elements (2/2)" duration="4">
+        <h2 is-upgraded><strong>Main &lt;main&gt;</strong></h2>
+<p>Main is another semantic element with the purpose of being the parent element of the main content of the page.</p>
+<h2 is-upgraded><strong>Lists</strong></h2>
+<h3 is-upgraded><strong>Ordered Lists &lt;ol&gt;</strong></h3>
+<p>A list of items whereby their order has some meaning.</p>
+<h3 is-upgraded><strong>Unordered Lists &lt;ul&gt;</strong></h3>
+<p>A list of items which order bears no meaning.</p>
+<h3 is-upgraded><strong>Description Lists &lt;dl&gt;</strong></h3>
+<p>Used to create a list of terms and descriptions</p>
+<h2 is-upgraded><strong>List Item &lt;li&gt;</strong></h2>
+<p>The li element denote an item within an ordered or unordered  list.</p>
+<h2 is-upgraded><strong>Description Term &lt;dt&gt;</strong></h2>
+<p>A term in the definition list</p>
+<h2 is-upgraded><strong>Description Definition &lt;dd&gt;</strong></h2>
+<p>The definition of a term in a definition list</p>
+<p class="image-container"><img style="width: 529.00px" src="img\b204074bca5f4add.png"></p>
+<h2 is-upgraded><strong>Divider &lt;div&gt;</strong></h2>
+<p>A generic block level grouping tag used to style content where no other grouping or section tag is applicable.</p>
+<h2 is-upgraded><strong>Span &lt;span&gt;</strong></h2>
+<p>A generic inline level grouping tag used to style content within a single line.</p>
+<h2 is-upgraded><strong>Task 8</strong></h2>
+<p>Let&#39;s change the site to list your hobbies on the site.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+    &lt;head&gt;
+        &lt;meta name=&#34;description&#34; content=&#34;My first website&#34;&gt;
+        &lt;meta name=&#34;keywords&#34; content=&#34;INFO1601, uwi, web&#34;&gt;
+        &lt;title&gt;My First Page&lt;/title&gt;
+        &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width,initial-scale=1&#34;&gt;
+        &lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;This is my first website&lt;/h1&gt;
+        &lt;/header&gt;
+
+        &lt;article&gt;
+            &lt;section&gt;
+                &lt;h2&gt;Welcome&lt;/h2&gt;
+            &lt;/section&gt;
+
+           &lt;section&gt;
+                &lt;figure&gt;
+                    &lt;img src=&#34;https://lorempixel.com/200/200/cats&#34; alt=&#34;a random cat&#34;&gt;
+                    &lt;figcaption&gt;Fig 1. A random cat&lt;/figcaption&gt;
+                &lt;/figure&gt;
+           &lt;/section&gt;
+
+           &lt;section&gt;
+                &lt;h3&gt;Hobbies&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Swimming&lt;/li&gt;
+                    &lt;li&gt;Coding&lt;/li&gt;
+                    &lt;li&gt;Music&lt;/li&gt;
+                    &lt;li&gt;Memeing&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/section&gt;
+
+        &lt;/article&gt;
+           
+    &lt;/body&gt;
+&lt;html&gt;</code></pre>
+<p class="image-container"><img style="width: 546.00px" src="img\5c0973f62a761f66.png"></p>
+<p>You should now see your hobbies listed</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Interactive Elements" duration="5">
+        <p>These elements can provide an enhanced experience on the web by responding to user input.</p>
+<h2 is-upgraded><strong>Details &lt;details&gt;</strong></h2>
+<p>Creates a collapsible ui element which can be expanded to show details for a given summary.</p>
+<h2 is-upgraded><strong>Summary &lt;summary&gt;</strong></h2>
+<p>Creates the visible heading of the details content.</p>
+<h2 is-upgraded><strong>Dialog &lt;dialog&gt;</strong></h2>
+<p>Dialogs provide customizable dialogs box, modal or window.</p>
+<h2 is-upgraded><strong>Task 9</strong></h2>
+<p>We can put our hobbies in a details tag so they can be expanded and collapsed.</p>
+<p>We also add a dialog to our site. (Ignore the values of the onclick attributes for now)</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+    &lt;head&gt;
+        &lt;meta name=&#34;description&#34; content=&#34;My first website&#34;&gt;
+        &lt;meta name=&#34;keywords&#34; content=&#34;INFO1601, uwi, web&#34;&gt;
+        &lt;title&gt;My First Page&lt;/title&gt;
+        &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width,initial-scale=1&#34;&gt;
+        &lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;This is my first website&lt;/h1&gt;
+        &lt;/header&gt;
+
+        &lt;article&gt;
+            &lt;section&gt;
+                &lt;h2&gt;Welcome&lt;/h2&gt;
+            &lt;/section&gt;
+
+           &lt;section&gt;
+                &lt;figure&gt;
+                    &lt;img src=&#34;https://lorempixel.com/200/200/cats&#34; alt=&#34;a random cat&#34;&gt;
+                    &lt;figcaption&gt;Fig 1. A random cat&lt;/figcaption&gt;
+                &lt;/figure&gt;
+           &lt;/section&gt;
+
+           &lt;section&gt;
+               &lt;details&gt;
+                   &lt;summary&gt;Hobbies&lt;/summary&gt;
+                   &lt;ul&gt;
+                    &lt;li&gt;Swimming&lt;/li&gt;
+                    &lt;li&gt;Coding&lt;/li&gt;
+                    &lt;li&gt;Music&lt;/li&gt;
+                    &lt;li&gt;Memeing&lt;/li&gt;
+                &lt;/ul&gt;
+               &lt;/details&gt;
+            &lt;/section&gt;
+
+            &lt;dialog id=&#34;mydialog&#34;&gt;
+                This is a dialog
+                &lt;a href=&#34;javascript:mydialog.removeAttribute(&#39;open&#39;)&#34;&gt;close&lt;/a&gt;
+            &lt;/dialog&gt;
+
+            &lt;a href=&#34;javascript:document.querySelector(&#39;#mydialog&#39;).setAttribute(&#39;open&#39;, true)&#34;&gt;
+                Open Dialog
+            &lt;/a&gt;
+
+        &lt;/article&gt;
+           
+    &lt;/body&gt;
+&lt;html&gt;</code></pre>
+<p>If &#34;Open Dialog&#34; is clicked the dialog opens!</p>
+<p class="image-container"><img style="width: 624.00px" src="img\79f46ff79ff8b940.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="End" duration="0">
+        <p>That&#39;s all for this lab. Congratulations for seeing it through. You have just been exposed to the fundamental building blocks of your everyday website.</p>
+<h2 is-upgraded><strong>References</strong></h2>
+<p><a href="https://html.spec.whatwg.org/multipage/#toc-semantics" target="_blank">WHATWG HTML 5 Spec</a></p>
+<p><a href="https://www.w3schools.com/html/default.asp" target="_blank">W3schools HTML 5</a></p>
+<h2 is-upgraded><strong>Feedback</strong></h2>
+<google-codelab-survey survey-id="lab1-1">
+<h4>[lab 1] How difficult was it to execute this lab?</h4>
+<paper-radio-group>
+<paper-radio-button>Very Easy</paper-radio-button>
+<paper-radio-button>Easy</paper-radio-button>
+<paper-radio-button>Moderate</paper-radio-button>
+<paper-radio-button>Hard</paper-radio-button>
+<paper-radio-button>Very Hard</paper-radio-button>
+</paper-radio-group>
+</google-codelab-survey>
+<google-codelab-survey survey-id="lab1-2">
+<h4>[lab 1] How difficult was it to understand the content this lab?</h4>
+<paper-radio-group>
+<paper-radio-button>Very Easy</paper-radio-button>
+<paper-radio-button>Easy</paper-radio-button>
+<paper-radio-button>Moderate</paper-radio-button>
+<paper-radio-button>Hard</paper-radio-button>
+<paper-radio-button>Very Hard</paper-radio-button>
+</paper-radio-group>
+</google-codelab-survey>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+
+</body>
+</html>

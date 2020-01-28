@@ -1,7 +1,7 @@
-<!----- Conversion time: 1.494 seconds.
+<!----- Conversion time: 1.224 seconds.
 
 
-Using this HTML file:
+Using this Markdown file:
 
 1. Cut and paste this output into your source file.
 2. See the notes and action items below regarding this conversion run.
@@ -11,245 +11,218 @@ Using this HTML file:
 Conversion notes:
 
 * Docs to Markdown version 1.0β17
-* Thu Jan 23 2020 18:43:15 GMT-0800 (PST)
+* Sun Jan 26 2020 19:34:13 GMT-0800 (PST)
 * Source doc: https://docs.google.com/open?id=16BuLLfvj71yS0hO_dN6sClXoKb-4ZDhl5P6NVIfZL8w
 ----->
 
 
-<p>
-<strong>COURSE TITLE: Introduction to WWW Programming</strong>
-</p>
-<h4><strong>COURSE CODE: INFO 1601</strong></h4>
+**COURSE TITLE: Introduction to WWW Programming**
 
 
-<p>
-<strong>TYPE: Core</strong>
-</p>
-<p>
-<strong>LEVEL: 1</strong>
-</p>
-<p>
-<strong>SEMESTER: 2</strong>
-</p>
-<p>
-<strong>START DATE: JAN-15-2017</strong>
-</p>
-<p>
-<strong>DEPARTMENT and FACULTY: DCIT/FST</strong>
-</p>
-<p>
-<strong>CREDITS: 3</strong>
-</p>
-<p>
-<strong>PRE-REQUISITE(S): None</strong>
-</p>
-<p>
-<strong>ESTIMATED STUDY HOURS: </strong>
-</p>
-<p>
+#### **COURSE CODE: INFO 1601**
+
+**TYPE: Core**
+
+**LEVEL: 1**
+
+**SEMESTER: 2**
+
+**START DATE: 24/01/2020**
+
+**DEPARTMENT and FACULTY: DCIT/FST**
+
+**CREDITS: 3**
+
+**PRE-REQUISITE(S): None**
+
+**ESTIMATED STUDY HOURS: **
+
 2 1-hour lectures, 1 2-hour lab, 6 hours per week independent study
-</p>
-<p>
-<strong>COURSE DESCRIPTION:</strong>
-</p>
-<p>
+
+**LECTURER: **Mr. Nicholas Mendez nicholas.mendez@sta.uwi.edu
+
+**OFFICE HOURS**
+
+**TUTOR: **Ms Karleen Lall
+
+**LECTURES**
+
+
+<table>
+  <tr>
+   <td>Day
+   </td>
+   <td>Time
+   </td>
+   <td>Location
+   </td>
+  </tr>
+  <tr>
+   <td>Fridays
+   </td>
+   <td>1:00PM - 2:00PM
+   </td>
+   <td>TLS LT D \
+(TCB 21 13/03/2020)
+   </td>
+  </tr>
+</table>
+
+
+**LABS:**
+
+
+<table>
+  <tr>
+   <td>Day
+   </td>
+   <td>Time
+   </td>
+   <td>Location
+   </td>
+  </tr>
+  <tr>
+   <td>Lab Stream 1: Tuesday
+   </td>
+   <td>8:00PM - 10:00PM
+   </td>
+   <td>CSL 2
+   </td>
+  </tr>
+  <tr>
+   <td>Lab Stream 2: Wednesday 
+   </td>
+   <td>2:00PM - 4:00PM
+   </td>
+   <td>CSL 2
+   </td>
+  </tr>
+  <tr>
+   <td>Lab Stream 3: Friday
+   </td>
+   <td>3:00PM - 5:00PM
+   </td>
+   <td>CSL 2
+   </td>
+  </tr>
+</table>
+
+
+
+## COURSE DESCRIPTION:
+
 This is an introduction to web technologies and systems, including hypertext, self-descriptive text, web page design, web navigational systems, and various mark-up languages and scripting languages. Programming examples, exercises and projects are drawn from practical web-based applications. Good programming practice and program clarity is emphasized throughout the course. At the end of the course, students will be able to appreciate the need for web related technologies and how they are used by organizations to improve their efficiency, marketability and profitability
-</p>
-<p>
-<strong>COURSE RATIONALE:</strong>
-</p>
-<p>
+
+
+## COURSE RATIONALE:
+
 A web presence is necessary in today’s business models not just for advertisement only, but more and more as an actual transaction interface. This introduces students to web technologies and systems. It gives the student a solid understanding of the role of web technologies in business scenarios. It also makes them aware of the systems required to implement and maintain a web presence.
-</p>
-<p>
-<strong>COURSE CONTENT:</strong>
-</p>
-<ol>
 
-<li>The Web Platform 
-<ol>
- 
-<li>Internet & Web History
- 
-<li>Governing Organizations
- 
-<li>Feature Proposal Process
-</li> 
-</ol>
 
-<li>HTTP 
-<ol>
- 
-<li>The Client Server Model
- 
-<li>URLs & Query Parameters
- 
-<li>HTTP Methods
- 
-<li>Status Codes
- 
-<li>SSL
-</li> 
-</ol>
+## COURSE CONTENT:
 
-<li>UI/UX Fundamentals 
-<ol>
- 
-<li>Usability
- 
-<li>UI Patterns
- 
-<li>Accessibility
- 
-<li>Best Practices
-</li> 
-</ol>
 
-<li>HTML Fundamentals 
-<ol>
- 
-<li>Tags & Attributes
- 
-<li>Head & Meta Elements
- 
-<li>Typography Elements
- 
-<li>Section Elements
- 
-<li>Grouping Elements
- 
-<li>Interactive Elements
- 
-<li>Links
- 
-<li>Table Elements
- 
-<li>Embedded Media Elements
- 
-<li>Form & Input Elements
- 
-<li>Accessibility 
- 
-<li>HTML GET & POST
-</li> 
-</ol>
 
-<li>Cascading Style Sheets 
-<ol>
- 
-<li>Box Model
- 
-<li>Flex-box
- 
-<li>Sizing
- 
-<li>Grid
- 
-<li>Media Queries
- 
-<li>Responsive Design
- 
-<li>Animations
-</li> 
-</ol>
+1. The Web Platform
+    1. Internet & Web History
+    2. Governing Organizations
+    3. Feature Proposal Process
+2. HTTP
+    4. The Client Server Model
+    5. URLs & Query Parameters
+    6. HTTP Methods
+    7. Status Codes
+    8. SSL
+3. UI/UX Fundamentals
+    9. Usability
+    10. UI Patterns
+    11. Accessibility
+    12. Best Practices
+4. HTML Fundamentals
+    13. Tags & Attributes
+    14. Head & Meta Elements
+    15. Typography Elements
+    16. Section Elements
+    17. Grouping Elements
+    18. Interactive Elements
+    19. Links
+    20. Table Elements
+    21. Embedded Media Elements
+    22. Form & Input Elements
+    23. Accessibility 
+    24. HTML GET & POST
+5. Cascading Style Sheets
+    25. Box Model
+    26. Flex-box
+    27. Sizing
+    28. Grid
+    29. Media Queries
+    30. Responsive Design
+    31. Animations
+6. Introduction to Javascript
+    32. JS primitives
+    33. Control statements
+    34. Functions, arrays, objects
+    35. High Order Functions
+    36. DOM Manipulation & Templating
+    37. Internationalization
+    38. AJAX
+7. The Critical Rendering Path
+    39. DOM
+    40. CSSOM
+    41. Render Tree
+    42. Accessibility Tree
+8. Client Side Persistence
+    43. Local Storage
+    44. Indexed DB
+9. 3rd Party Libraries & Frameworks
+    45. Bootstrap Introduction
+    46. React Introduction 
 
-<li>Introduction to Javascript 
-<ol>
- 
-<li>JS primitives
- 
-<li>Control statements
- 
-<li>Functions, arrays, objects
- 
-<li>High Order Functions
- 
-<li>DOM Manipulation & Templating
- 
-<li>Internationalization
- 
-<li>AJAX
-</li> 
-</ol>
 
-<li>The Critical Rendering Path 
-<ol>
- 
-<li>DOM
- 
-<li>CSSOM
- 
-<li>Render Tree
- 
-<li>Accessibility Tree
-</li> 
-</ol>
+## COURSE LEARNING OUTCOMES:
 
-<li>Client Side Persistence 
-<ol>
- 
-<li>Local Storage
- 
-<li>Indexed DB
-</li> 
-</ol>
-
-<li>3rd Party Libraries & Frameworks 
-<ol>
- 
-<li>Bootstrap Introduction
- 
-<li>React Introduction 
-</li> 
-</ol>
-</li> 
-</ol>
-<p>
-<strong>COURSE LEARNING OUTCOMES:</strong>
-</p>
-<p>
 Upon the successful completion of this course, the student will be able to:
-</p>
-<ol>
 
-<li>Describe the structure of the World Wide Web as interconnected hypertext documents.
 
-<li>Describe the importance of the HTTP protocol in Web applications.
 
-<li>Create and validate HTML documents.
+1. Describe the structure of the World Wide Web as interconnected hypertext documents.
+2. Describe the importance of the HTTP protocol in Web applications.
+3. Create and validate HTML documents.
+4. Apply and integrate HTML syntax to generate contents via programming.
+5. Use presentation technologies (Cascading Style Sheets and DHTML) to display web page content
+6. Apply a scripting language to enhance the functionality and appearance of web-pages
+7. Demonstrate inter-personal skills, teamwork, and effective use of appropriate presentation technologies.
+8. Demonstrate effective written and oral communication techniques for evaluating and defending chosen presentation technologies.
 
-<li>Apply and integrate HTML syntax to generate contents via programming.
 
-<li>Use presentation technologies (Cascading Style Sheets and DHTML) to display web page content
+## TEACHING STRATEGIES:
 
-<li>Apply a scripting language to enhance the functionality and appearance of web-pages
+Interactive lectures and lab demonstrations will be used to gain a deeper understanding of the processes, techniques and models presented. Discussions on the processes, techniques and models are presented through case-studies and group work.
 
-<li>Demonstrate inter-personal skills, teamwork, and effective use of appropriate presentation technologies.
 
-<li>Demonstrate effective written and oral communication techniques for evaluating and defending chosen presentation technologies.
-</li>
-</ol>
-<p>
-<strong>TEACHING STRATEGIES:</strong>
-</p>
-<p>
-Interactive lectures and lab demonstrations will be used to gain deeper understanding of the processes, techniques and models presented. Discussions on the processes, techniques and models are presented through case-studies and group work.
-</p>
-<p>
-<strong>RESOURCES:</strong>
-</p>
-<p>
-<a href="https://frontendmasters.com/books/front-end-handbook/2019/">https://frontendmasters.com/books/front-end-handbook/2019/</a>
-</p>
-<p>
-<a href="https://university.webflow.com/courses/intro-to-web-design-course">https://university.webflow.com/courses/intro-to-web-design-course</a>
-</p>
-<p>
-<a href="https://www.w3schools.com/">https://www.w3schools.com/</a>
-</p>
-<p>
-<strong>COURSE CALENDAR: </strong>
-</p>
+## ASSESSMENTS
+
+
+
+*   Assignment 1 - 20%
+*   Assignment 2 - 20%
+*   Assignment 3 - 20%
+*   Participation & Ethic - 5%
+*   Project - 35%
+
+
+## RESOURCES:
+
+[https://frontendmasters.com/books/front-end-handbook/2019/](https://frontendmasters.com/books/front-end-handbook/2019/)
+
+[https://university.webflow.com/courses/intro-to-web-design-course](https://university.webflow.com/courses/intro-to-web-design-course)
+
+[https://www.w3schools.com/](https://www.w3schools.com/)
+
+
+## COURSE CALENDAR: 
+
 
 <table>
   <tr>
@@ -293,7 +266,7 @@ Interactive lectures and lab demonstrations will be used to gain deeper understa
    </td>
    <td>02/02/2020
    </td>
-   <td>CSS Fundamentals<br>
+   <td>CSS Fundamentals \
 UI/UX Fundamentals
    </td>
    <td>Lab 2 HTML Fundamentals 2
@@ -308,7 +281,7 @@ UI/UX Fundamentals
    </td>
    <td>Intro to Javascript
    </td>
-   <td>Lab 3 CSS Fundamentals<br>
+   <td>Lab 3 CSS Fundamentals \
 Assignment 1  Due
    </td>
    <td>
@@ -319,10 +292,10 @@ Assignment 1  Due
    </td>
    <td>16/02/2020
    </td>
-   <td>Advanced Javascript<br>
+   <td>Advanced Javascript \
 
    </td>
-   <td>Lab 4 Intro to JavaScript<br>
+   <td>Lab 4 Intro to JavaScript \
 
    </td>
    <td>
@@ -335,10 +308,11 @@ Assignment 1  Due
    </td>
    <td>Responsive Design
    </td>
-   <td>Assignment 2 Presentations <br>
+   <td>Assignment 2 Presentations  \
+(Groups of 4, 7min presentations) \
 Done in labs streams 2 & 3
    </td>
-   <td>Carnival Mon 24/02/2020<br>
+   <td>Carnival Mon 24/02/2020 \
 Carnival Tue 25/02/2020
    </td>
   </tr>
@@ -362,6 +336,8 @@ Carnival Tue 25/02/2020
    <td>3rd Party Libraries, Frameworks
    </td>
    <td>Lab 6 Ajax & Templating
+<p>
+Assignment 3 Due
    </td>
    <td>
    </td>
@@ -373,8 +349,8 @@ Carnival Tue 25/02/2020
    </td>
    <td>Revision
    </td>
-   <td>Lab 7 Materialize Introduction<br>
-Assignment 3 Due
+   <td>Lab 7 Materialize Introduction \
+
    </td>
    <td>
    </td>
@@ -386,7 +362,7 @@ Assignment 3 Due
    </td>
    <td>Native Web APIs
    </td>
-   <td>Lab Exam
+   <td>Lab 8 3rd Party APIs
    </td>
    <td>
    </td>
@@ -398,7 +374,8 @@ Assignment 3 Due
    </td>
    <td>The Web Platform
    </td>
-   <td>Lab 8 Browser Storage
+   <td>Lab 8 Browser Storage \
+
    </td>
    <td>Spiritual Baptist 30/03/2020
    </td>
@@ -429,3 +406,6 @@ Assignment 3 Due
   </tr>
 </table>
 
+
+
+<!-- Docs to Markdown version 1.0β17 -->
