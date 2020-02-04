@@ -1,0 +1,368 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Lab 2 - Advanced HTML &amp; CSS Intro</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid="UA-154889698-1"
+                  id="lab2"
+                  title="Lab 2 - Advanced HTML &amp; CSS Intro"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Introduction" duration="0">
+        <p class="image-container"><img style="width: 399.68px" src="img\b6492741da28def9.png"></p>
+<h2 is-upgraded><strong>More Elements</strong></h2>
+<p>In this lab we shall cover the remaining html elements we are likely to utilize in the course. The elements explored in the lab allows the presentation of data, media and receive input from users which are core concerns of any modern application.</p>
+<h2 is-upgraded><strong>Task 1</strong></h2>
+<p>Just as in lab 1 follow the link below to open codesandbox. Fork the project then sign in.</p>
+<p><a href="https://codesandbox.io/s/info1601-kwzsw?fontsize=14&hidenavigation=1&theme=dark" target="_blank"><paper-button class="colored" raised>Open Lab 2</paper-button></a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="URLs" duration="0">
+        <p>The world wide web is one of the several applications of the internet. It is a global network of web servers which host documents which web browsers which connect to using the server&#39;s IP address over the HTTP. Uniform Resource Locator (URL) is the full location of a resource on a network. </p>
+<p>HTTP URLs following format</p>
+<p class="image-container"><img style="width: 624.00px" src="img\ed84df28afce7438.png"></p>
+<p>Example</p>
+<p class="image-container"><img style="width: 624.00px" src="img\342ec1f04098547f.png"></p>
+<p>Most of the time we only need to type in the domain into the address bar and the browser can imply the rest.</p>
+<p>In this course there are two ways of specifying a url:</p>
+<h2 is-upgraded><strong>Origin-relative</strong></h2>
+<p>This is when we use the full web url to specify the location of a resource.</p>
+<p>EG. href=&#34;<a href="https://picsum.photos/200/300.webp" target="_blank">https://picsum.photos/200/300.webp</a>&#34;</p>
+<h2 is-upgraded><strong>Directory-relative</strong></h2>
+<p>This is when we use relative addressing to specify the location of a resource relative to the location of the current webpage in the file system of the server.<br>Examples</p>
+<p class="image-container"><img style="width: 277.50px" src="img\47199a55bb910030.png"></p>
+<p>The following are the paths of main.js cat.png and dog.png relative to index.js</p>
+<p>href = &#34;./img/cat.png&#34; - subdirectory of the parent directory of index.html</p>
+<p>href = &#34;dog.png&#34; - same directory as index.html</p>
+<p>href = &#34;../js/main.js&#34; - subdirectory of the parent&#39;s parent directory of index.html</p>
+<p>In short / is used to delimit directories. &#34;.&#34; to reference something in the same directory and &#34;..&#34; is used to up to the parent directory.</p>
+<h2 is-upgraded><strong>Task 2</strong><br></h2>
+<p>Just ensure you pay good attention to this section as it is a common point of errors for first time web developers especially <strong>directory relative urls</strong>. Understanding this can save consid</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="The Anchor Element &lt;a&gt;" duration="0">
+        <p>The anchor element is used to create hyperlinks which is a crucial feature of the web. We use hyperlinks to link resources and other pages to a webpage.</p>
+<h2 is-upgraded><strong>Link types</strong></h2>
+<p>By specifying different protocols in a link&#39;s url we can have our page link to emails phone numbers or other parts of the page.</p>
+<h2 is-upgraded><strong>Telephone Links</strong></h2>
+<p>On mobile phones these links can open the dialer with a specified contact number.</p>
+<h2 is-upgraded><strong>Download Links </strong></h2>
+<p>These links would cause the browser to download a specified file.</p>
+<h2 is-upgraded><strong>Mailto Links</strong></h2>
+<p>These links can open a mail application on the clients device.</p>
+<h2 is-upgraded><strong>FTP Links</strong></h2>
+<p>These link to open ftp servers which can be browsed with a web browser or FTP client</p>
+<h2 is-upgraded><strong>External Links</strong></h2>
+<p>These links to other webpages</p>
+<h2 is-upgraded><strong>Skip Links</strong></h2>
+<p>Use this to let users quickly skip to a different section on the same page. The url must match the id of the desired section.</p>
+<p class="image-container"><img style="width: 498.50px" src="img\93c96cf42d82b7f9.gif"></p>
+<h2 is-upgraded><strong>Task 3</strong></h2>
+<p>Edit index to allow navigation to signup.html..</p>
+<p>index.html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34; /&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=, initial-scale=&#34; /&gt;
+    &lt;title&gt;Home&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;nav&gt;
+      &lt;h1&gt;Home&lt;/h1&gt;
+      &lt;a href=&#34;index.html&#34;&gt;Home&lt;/a&gt;
+      &lt;a href=&#34;signup.html&#34;&gt;Sign UP&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Table Elements" duration="0">
+        <p>These are used to present tabulated data on a webpage, they are as follows.</p>
+<h2 is-upgraded><strong>Table &lt;table&gt;</strong></h2>
+<ul>
+<li>Table Head &lt;thead&gt; : The head section of a table which contains table headers</li>
+<li>Table Header &lt;th&gt; : A column header of the table</li>
+<li>Table Body &lt;tbody&gt; : The contents of the table</li>
+<li>Table Row &lt;tr&gt;: Separates the rows of a table</li>
+<li>Table Data &lt;td&gt;: Separates a column within a row</li>
+<li>Table Footer &lt;tfoot&gt;: The footer section of the table</li>
+</ul>
+<h2 is-upgraded><strong>Task 4</strong></h2>
+<p>Update index.html with a basic table.</p>
+<p>index.html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34; /&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=, initial-scale=&#34; /&gt;
+    &lt;title&gt;Home&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;nav&gt;
+      &lt;h1&gt;Home&lt;/h1&gt;
+      &lt;a href=&#34;index.html&#34;&gt;Home&lt;/a&gt;
+      &lt;a href=&#34;signup.html&#34;&gt;Sign UP&lt;/a&gt;
+    &lt;/nav&gt;
+
+        &lt;table border=&#34;solid&#34;&gt;
+                &lt;thead&gt;
+                  &lt;th&gt;Item&lt;/th&gt;&lt;th&gt;Qty&lt;/th&gt;&lt;th&gt;Price&lt;/th&gt;&lt;th&gt;Total&lt;/th&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                   &lt;tr&gt;
+                        &lt;td&gt;Milk&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;$8.00&lt;/td&gt;&lt;td&gt;$16.00&lt;/td&gt;
+                 &lt;/tr&gt;
+                  &lt;tr&gt;
+                        &lt;td&gt;Eggs Pack&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;$6.00&lt;/td&gt;&lt;td&gt;$6.00&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/tbody&gt;
+                &lt;tfoot&gt;
+                  &lt;tr&gt;
+                        &lt;td&gt;Total&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;$24.00&lt;/td&gt;                          &lt;/tr&gt;
+                &lt;/tfoot&gt;
+        &lt;/table&gt;
+    &lt;script src=&#34;script.js&#34;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>This markup will render our table. Notice it is given a border using the border attribute, however in the HTML 5 standard css should be used for setting borders.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Embedded Media Elements" duration="0">
+        <aside class="warning"><p>For the rest of this lab you will need to pop out your editor&#39;s browser in a separate window. The following tasks would only work in this mode. You will also have to manually refresh the window to see the results of changes.</p>
+</aside>
+<p class="image-container"><img style="width: 624.00px" src="img\99a4014e10ac2608.png"></p>
+<p class="image-container"><img style="width: 624.00px" src="img\302bec232a2212c.png"></p>
+<p>Before you proceed ensure your work space is split into multiple windows if you are editing in repl.it.<br></p>
+<h2 is-upgraded><br><strong>Picture &lt;picture&gt;</strong></h2>
+<p>Not to be confused with figure, Picture can be used for adaptive images whereby different images can be displayed based on the screen size or supported image formats of the user.<br><img style="width: 624.00px" src="img\56e66793501dd2b6.png"></p>
+<h2 is-upgraded><strong>Video &lt;video&gt;</strong></h2>
+<p>The video tag works similarly for videos.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\cb53072be01c0862.png"></p>
+<p>The &lt;track&gt; element lets us link subtitle files to our videos.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\4252fe04e731bf5d.png"></p>
+<h2 is-upgraded><strong>Audio &lt;audio&gt;</strong></h2>
+<p class="image-container"><img style="width: 624.00px" src="img\8cb805c73a7bed3c.png"></p>
+<h2 is-upgraded><strong>Object &lt;object&gt;</strong></h2>
+<p>Object is a legacy element for embedding video, audio and documents. Now that there&#39;s dedicated elements for video and audio, object is best used for embedding PDFs.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\da5be4a5c99e1d4c.png"></p>
+<h2 is-upgraded><strong>Iframe &lt;iframe&gt;</strong></h2>
+<p>Iframes allows us to embed a webpage in another webpage. Platforms like youtube allow you to embed youtube videos on a site using iframes.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\c3d2d112eab59ff4.png"></p>
+<h2 is-upgraded><strong>Map &lt;map&gt; &amp; Area &lt;area&gt;</strong></h2>
+<p>These elements allow us to specify hotpots in an image which links to other pages.</p>
+<p class="image-container"><img style="width: 600.00px" src="img\36717d198ce83ef5.gif"></p>
+<h2 is-upgraded><strong>Task 5</strong></h2>
+<p>Go on your favourite youtube video. Click share then embed. The iframe markup for that video will appear. Add that markup to index.html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34; /&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=, initial-scale=&#34; /&gt;
+    &lt;title&gt;Home&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;nav&gt;
+      &lt;h1&gt;Home&lt;/h1&gt;
+      &lt;a href=&#34;index.html&#34;&gt;Home&lt;/a&gt;
+      &lt;a href=&#34;signup.html&#34;&gt;Sign UP&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/kg4Na-RbSrA&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+    &lt;script src=&#34;script.js&#34;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Form &amp; Input Elements" duration="0">
+        <p>Forms are an essential part of what makes the web interactive. Input elements specify the various ui components for taking user input based on the type attribute. Some of these types are as follows</p>
+<ul>
+<li>Date: Calendar picker for date input</li>
+<li>Datetime-local: Calendar picker with input for time as well </li>
+<li>Checkbox: Used for selecting multiple options</li>
+<li>Range: A numerical input with a slider</li>
+<li>Text: Text other than, email, urls or telephone numbers</li>
+<li>File: File Uploads</li>
+<li>Datalist: A dropdown menu with autocomplete</li>
+<li>Submit: Used for submitting forms</li>
+<li>Button: Used for any button other than submitting</li>
+<li>Password: Used for password fields</li>
+</ul>
+<h2 is-upgraded><strong>Task 6</strong></h2>
+<p>Edit signup.html to create the following form.</p>
+<pre><code>  &lt;form action=&#34;results.html&#34; method=&#34;GET&#34;&gt;
+      &lt;fieldset&gt;
+        &lt;legend&gt;Demographic Info&lt;/legend&gt;
+
+        &lt;label&gt;
+          Full Name
+          &lt;input type=&#34;text&#34; name=&#34;fullname&#34; /&gt;
+        &lt;/label&gt;
+
+        &lt;br /&gt;
+
+        &lt;label&gt;
+          Sex
+          &lt;select name=&#34;sex&#34;&gt;
+            &lt;option value=&#34;male&#34;&gt;male&lt;/option&gt;
+            &lt;option value=&#34;female&#34;&gt;male&lt;/option&gt;
+            &lt;option value=&#34;other&#34;&gt;other&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/label&gt;
+
+        &lt;br /&gt;
+
+        &lt;label for=&#34;date&#34;&gt;
+          Date Of Birth
+          &lt;input type=&#34;date&#34; name=&#34;dob&#34; /&gt;
+        &lt;/label&gt;
+      &lt;/fieldset&gt;
+
+      &lt;fieldset&gt;
+        &lt;legend&gt;Contact Info&lt;/legend&gt;
+
+        &lt;label&gt;
+          Email
+          &lt;input type=&#34;email&#34; name=&#34;email&#34; /&gt;
+        &lt;/label&gt;
+
+        &lt;br /&gt;
+
+        &lt;label&gt;
+          County
+          &lt;input list=&#34;counties&#34; name=&#34;county&#34; /&gt;
+          &lt;datalist id=&#34;counties&#34;&gt;
+            &lt;option value=&#34;Caroni&#34;&gt;&lt;/option&gt;
+            &lt;option value=&#34;Mayaro&#34;&gt;&lt;/option&gt;
+            &lt;option value=&#34;Nariva&#34;&gt;&lt;/option&gt;
+            &lt;option value=&#34;Saint Andrew&#34;&gt;&lt;/option&gt;
+            &lt;option value=&#34;Saint David&#34;&gt;&lt;/option&gt;
+            &lt;option value=&#34;Saint George&#34;&gt;&lt;/option&gt;
+            &lt;option value=&#34;Saint Patrick&#34;&gt;&lt;/option&gt;
+            &lt;option value=&#34;Victoria&#34;&gt;&lt;/option&gt;
+          &lt;/datalist&gt;
+        &lt;/label&gt;
+
+        &lt;br /&gt;
+
+        &lt;label&gt;
+          Telephone
+          &lt;input type=&#34;tel&#34; name=&#34;telephone&#34; /&gt;
+        &lt;/label&gt;
+      &lt;/fieldset&gt;
+
+      &lt;input type=&#34;submit&#34; value=&#34;signup&#34; /&gt;
+    &lt;/form&gt;
+</code></pre>
+<p>Things to note:</p>
+<ul>
+<li>This page takes the data from the form and sends the data to another page results.html as is specified via the action attribute.</li>
+<li>Each input element must have a name inorder for its values to be referenced and sent correctly as form data.</li>
+<li>The submit button will trigger the form sending the values to the url specified in the action attribute</li>
+</ul>
+<p>Now try entering some data and pressing the ‘sign up&#39; button. You should see the page be directed to signup.html</p>
+<p><img style="width: 624.00px" src="img\4dbd228ceb9edb51.png"><br>Notice how the form data on the previous page is written as query parameters to the url of the signup page. We also have some javascript which presents the data nicely in a table (JS code will not be covered in this lab, it&#39;s only for demonstration purposes)<br></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Cascading Style Sheets" duration="0">
+        <p>CSS is a scripting language used to affect the presentation of a webpage. It can be linked to a document in three ways:</p>
+<ul>
+<li>Inline CSS: Styles are written via the style attribute of an element</li>
+<li>Head Styles: Styles are written in a &lt;style&gt; tag within the &lt;head&gt; of the document</li>
+<li>External Styles: Styles are made in a separate page allows styles to be reused in different pages.</li>
+</ul>
+<p>Styles are made up by a selector and rules. The selector is a string that describes what elements are to be affected by the style. Rules consist of properties and values which specify what visual changes are to be applied to the element.  </p>
+<p class="image-container"><img style="width: 569.00px" src="img\ac8a4630ae0ff454.png"></p>
+<p>The style given above would change all H1 tags font colour to blue and size to 12px.</p>
+<p>CSS is said to be cascading because an element that is matched with the selectors of multiple styles will have the combined set of rules applied to that element. If two or more styles have conflicting rules they will be applied the in the following precedence</p>
+<ul>
+<li>External styles will override other external styles linked before it.</li>
+<li>Styles in the style tag will override external styles.</li>
+<li>Styles in the style tag will override other styles above it.</li>
+<li>Inline styles would override styles in the style tag.</li>
+</ul>
+<h2 is-upgraded><strong>Selectors</strong></h2>
+<p><a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">W3schools</a> organizes selectors into 5 categories but we will only look at the first three in this lab. These categories are as follows:</p>
+<h3 is-upgraded>Simple Selectors</h3>
+<p>These select elements by their tag, id, class or wildcard (*). We can also group them together using commas. </p>
+<p class="image-container"><img style="width: 624.00px" src="img\f87b43eabd4bba14.png"></p>
+<h3 is-upgraded>Combinator Selectors</h3>
+<p>These select elements based on the relationships between them.</p>
+<ul>
+<li>a &gt; b : Any selected element b that&#39;s a direct child of selected element a </li>
+<li>a ~ b: Any selected element b that comes after a selected element a</li>
+<li>a + b: Any selected element b thats a sibling of a selected element a</li>
+<li>a b: Any selected element b which is a contained with a selected element a</li>
+</ul>
+<p class="image-container"><img style="width: 624.00px" src="img\7b7cf054e7dc1e57.png"></p>
+<h3 is-upgraded>Pseudo Class Selectors</h3>
+<p>Pseudo class selectors allow style to be dynamically applied during events which occur on an element.</p>
+<p class="image-container"><img style="width: 600.00px" src="img\d7be96e1f0a2650d.gif"></p>
+<h2 is-upgraded><strong>Task 7</strong></h2>
+<p>Review the examples and try to explain which rules apply to which element.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Units" duration="0">
+        <p>When positioning or sizing elements we typically provide numeric values however there are several units available for us to use. They are as follows:</p>
+<p><img style="width: 512.00px" src="img\990aac47d21b6a24.png"><br><br>Absolute units are consistent everywhere, 5 centimeters would always be the same distance. However relative units are in relation to something else. Eg the screen size, therefore on different devices 50vw (viewport width) would be represented in different lengths.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Conclusion" duration="0">
+        <p>This concludes your introduction to HTML &amp; CSS. As you can see there are many elements available for building sites. It&#39;s not important to memorize all of them in detail however, it&#39;s beneficial to have an idea what the standard elements can do.</p>
+<h2 is-upgraded><strong>References</strong></h2>
+<p><a href="https://www.usability.gov/how-to-and-tools/methods/user-interface-elements.html" target="_blank">UI Elements</a></p>
+<p><a href="http://html5doctor.com/html5-forms-input-types/" target="_blank">Forms and Input</a></p>
+<p><a href="https://www.w3schools.com/css/css_syntax.asp" target="_blank">CSS Intro on W3schools</a></p>
+<p><a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">CSS Selectors</a></p>
+<p><a href="http://rapidtables.com/web/css/css-color.html#gray" target="_blank">CSS Colours</a><br><a href="https://css-tricks.com/almanac/" target="_blank">CSS Almanac</a></p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+
+</body>
+</html>

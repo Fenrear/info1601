@@ -1,4 +1,4 @@
-<!----- Conversion time: 1.224 seconds.
+<!----- Conversion time: 1.255 seconds.
 
 
 Using this Markdown file:
@@ -11,7 +11,7 @@ Using this Markdown file:
 Conversion notes:
 
 * Docs to Markdown version 1.0β17
-* Sun Jan 26 2020 19:34:13 GMT-0800 (PST)
+* Fri Jan 31 2020 08:42:11 GMT-0800 (PST)
 * Source doc: https://docs.google.com/open?id=16BuLLfvj71yS0hO_dN6sClXoKb-4ZDhl5P6NVIfZL8w
 ----->
 
@@ -152,32 +152,36 @@ A web presence is necessary in today’s business models not just for advertisem
     23. Accessibility 
     24. HTML GET & POST
 5. Cascading Style Sheets
-    25. Box Model
-    26. Flex-box
-    27. Sizing
-    28. Grid
-    29. Media Queries
-    30. Responsive Design
-    31. Animations
+    25. Selectors
+    26. Background
+    27. Borders
+    28. Box Shadow
+    29. Box Model
+    30. Flex-box
+    31. Sizing
+    32. Grid
+    33. Media Queries
+    34. Responsive Design
+    35. Animations
 6. Introduction to Javascript
-    32. JS primitives
-    33. Control statements
-    34. Functions, arrays, objects
-    35. High Order Functions
-    36. DOM Manipulation & Templating
-    37. Internationalization
-    38. AJAX
+    36. JS primitives
+    37. Control statements
+    38. Functions, arrays, objects
+    39. High Order Functions
+    40. DOM Manipulation & Templating
+    41. Internationalization
+    42. AJAX
 7. The Critical Rendering Path
-    39. DOM
-    40. CSSOM
-    41. Render Tree
-    42. Accessibility Tree
+    43. DOM
+    44. CSSOM
+    45. Render Tree
+    46. Accessibility Tree
 8. Client Side Persistence
-    43. Local Storage
-    44. Indexed DB
+    47. Local Storage
+    48. Indexed DB
 9. 3rd Party Libraries & Frameworks
-    45. Bootstrap Introduction
-    46. React Introduction 
+    49. Bootstrap Introduction
+    50. React Introduction 
 
 
 ## COURSE LEARNING OUTCOMES:
@@ -205,11 +209,12 @@ Interactive lectures and lab demonstrations will be used to gain a deeper unders
 
 
 
-*   Assignment 1 - 20%
-*   Assignment 2 - 20%
-*   Assignment 3 - 20%
-*   Participation & Ethic - 5%
-*   Project - 35%
+*   Lab Based Assessment 1 - 10%
+*   Lab Based Assessment 2 - 10%
+*   Lab Based Assessment 3 - 10%
+*   Lab Based Assessment 4 - 10%
+*   Lab Based Assessment 5 - 10%
+*   Project - 50%
 
 
 ## RESOURCES:
@@ -266,10 +271,11 @@ Interactive lectures and lab demonstrations will be used to gain a deeper unders
    </td>
    <td>02/02/2020
    </td>
-   <td>CSS Fundamentals \
-UI/UX Fundamentals
+   <td>CSS Fundamentals 2 \
+
    </td>
-   <td>Lab 2 HTML Fundamentals 2
+   <td>Lab 2 HTML & CSS Fundamentals \
+Assignment 1 Released
    </td>
    <td>
    </td>
@@ -279,10 +285,10 @@ UI/UX Fundamentals
    </td>
    <td>9/02/2020
    </td>
-   <td>Intro to Javascript
+   <td>UI/UX Fundamentals & Responsive Design
    </td>
-   <td>Lab 3 CSS Fundamentals \
-Assignment 1  Due
+   <td>Lab 3 CSS Fundamentals 2 \
+
    </td>
    <td>
    </td>
@@ -292,11 +298,12 @@ Assignment 1  Due
    </td>
    <td>16/02/2020
    </td>
-   <td>Advanced Javascript \
+   <td>Javascript Fundamentals \
 
    </td>
-   <td>Lab 4 Intro to JavaScript \
-
+   <td>Lab 4 Advanced CSS \
+Assignment 1 Due \
+Assignment 2 Released
    </td>
    <td>
    </td>
@@ -306,11 +313,10 @@ Assignment 1  Due
    </td>
    <td>23/02/2020
    </td>
-   <td>Responsive Design
+   <td>HTTP, Ajax & Templating
    </td>
-   <td>Assignment 2 Presentations  \
-(Groups of 4, 7min presentations) \
-Done in labs streams 2 & 3
+   <td>Lab 5 Intro JS \
+(1hr lab in Streams 2 & 3)
    </td>
    <td>Carnival Mon 24/02/2020 \
 Carnival Tue 25/02/2020
@@ -321,9 +327,10 @@ Carnival Tue 25/02/2020
    </td>
    <td>01/03/2020
    </td>
-   <td>The Critical Rendering Path & HTTP
+   <td>Web Performance & Optimization
    </td>
-   <td>Lab 5 Advanced CSS
+   <td>Lab 6 Ajax & Templating \
+Assignment 3 Released
    </td>
    <td>
    </td>
@@ -335,9 +342,9 @@ Carnival Tue 25/02/2020
    </td>
    <td>3rd Party Libraries, Frameworks
    </td>
-   <td>Lab 6 Ajax & Templating
+   <td>Assignment 2 Presentations 
 <p>
-Assignment 3 Due
+(Groups of 4, 7min presentations)
    </td>
    <td>
    </td>
@@ -347,10 +354,10 @@ Assignment 3 Due
    </td>
    <td>15/03/2020
    </td>
-   <td>Revision
+   <td>The Critical Rendering Path
    </td>
    <td>Lab 7 Materialize Introduction \
-
+Project Released
    </td>
    <td>
    </td>
@@ -362,7 +369,8 @@ Assignment 3 Due
    </td>
    <td>Native Web APIs
    </td>
-   <td>Lab 8 3rd Party APIs
+   <td>Lab 8 3rd Party APIs \
+Assignment 3 Due
    </td>
    <td>
    </td>
@@ -374,7 +382,7 @@ Assignment 3 Due
    </td>
    <td>The Web Platform
    </td>
-   <td>Lab 8 Browser Storage \
+   <td>Lab 9 Browser Storage \
 
    </td>
    <td>Spiritual Baptist 30/03/2020
@@ -387,7 +395,7 @@ Assignment 3 Due
    </td>
    <td>Holiday
    </td>
-   <td>Lab 9 React Intro (1hr lab in Streams 1 & 2)
+   <td>Lab 10 React Intro (1hr lab in Streams 1 & 2)
    </td>
    <td>Good Friday 10/04/2020
    </td>
