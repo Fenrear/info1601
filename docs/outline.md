@@ -1,4 +1,4 @@
-<!----- Conversion time: 1.255 seconds.
+<!----- Conversion time: 1.943 seconds.
 
 
 Using this Markdown file:
@@ -11,7 +11,7 @@ Using this Markdown file:
 Conversion notes:
 
 * Docs to Markdown version 1.0β17
-* Fri Jan 31 2020 08:42:11 GMT-0800 (PST)
+* Tue Feb 04 2020 07:39:35 GMT-0800 (PST)
 * Source doc: https://docs.google.com/open?id=16BuLLfvj71yS0hO_dN6sClXoKb-4ZDhl5P6NVIfZL8w
 ----->
 
@@ -233,7 +233,7 @@ Interactive lectures and lab demonstrations will be used to gain a deeper unders
   <tr>
    <td>Week
    </td>
-   <td>Date 
+   <td>Start Date 
    </td>
    <td>Topic
    </td>
@@ -275,7 +275,7 @@ Interactive lectures and lab demonstrations will be used to gain a deeper unders
 
    </td>
    <td>Lab 2 HTML & CSS Fundamentals \
-Assignment 1 Released
+
    </td>
    <td>
    </td>
@@ -287,8 +287,7 @@ Assignment 1 Released
    </td>
    <td>UI/UX Fundamentals & Responsive Design
    </td>
-   <td>Lab 3 CSS Fundamentals 2 \
-
+   <td>Lab 3 CSS Fundamentals 2
    </td>
    <td>
    </td>
@@ -302,8 +301,7 @@ Assignment 1 Released
 
    </td>
    <td>Lab 4 Advanced CSS \
-Assignment 1 Due \
-Assignment 2 Released
+Assessment 1: HTML
    </td>
    <td>
    </td>
@@ -317,6 +315,8 @@ Assignment 2 Released
    </td>
    <td>Lab 5 Intro JS \
 (1hr lab in Streams 2 & 3)
+<p>
+Assessment 2: CSS
    </td>
    <td>Carnival Mon 24/02/2020 \
 Carnival Tue 25/02/2020
@@ -330,7 +330,7 @@ Carnival Tue 25/02/2020
    <td>Web Performance & Optimization
    </td>
    <td>Lab 6 Ajax & Templating \
-Assignment 3 Released
+Assessment 3: Advanced CSS
    </td>
    <td>
    </td>
@@ -342,9 +342,9 @@ Assignment 3 Released
    </td>
    <td>3rd Party Libraries, Frameworks
    </td>
-   <td>Assignment 2 Presentations 
+   <td>Lab 7 Materialize Introduction
 <p>
-(Groups of 4, 7min presentations)
+Assessment 4: JS & DOM
    </td>
    <td>
    </td>
@@ -356,7 +356,8 @@ Assignment 3 Released
    </td>
    <td>The Critical Rendering Path
    </td>
-   <td>Lab 7 Materialize Introduction \
+   <td> \
+Assessment 5 : AJAX & Templating \
 Project Released
    </td>
    <td>
@@ -370,7 +371,7 @@ Project Released
    <td>Native Web APIs
    </td>
    <td>Lab 8 3rd Party APIs \
-Assignment 3 Due
+
    </td>
    <td>
    </td>
@@ -382,7 +383,7 @@ Assignment 3 Due
    </td>
    <td>The Web Platform
    </td>
-   <td>Lab 9 Browser Storage \
+   <td>Lab 9 Web APIs \
 
    </td>
    <td>Spiritual Baptist 30/03/2020
