@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-02-11T03:38:18Z",
+  "id": "lab3",
+  "duration": 0,
+  "title": "Lab 3 - CSS Fundamentals",
+  "authors": "Nicholas Mendez",
+  "summary": "In this code lab we shall further explore the fundamentals of css.",
+  "source": "17Sj6_NZf2En3eJfyHFNpsIBzY1iJK_5a_KXMQUoLzKg",
+  "theme": "web",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "Web"
+  ],
+  "tags": [
+    "web"
+  ],
+  "ga": "UA-154889698-1",
+  "url": "lab3"
+}

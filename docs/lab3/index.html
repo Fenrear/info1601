@@ -1,0 +1,413 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Lab 3 - CSS Fundamentals</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid="UA-154889698-1"
+                  id="lab3"
+                  title="Lab 3 - CSS Fundamentals"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Introduction" duration="0">
+        <p class="image-container"><img style="width: 399.50px" src="img\6e2ffcf104445632.png"></p>
+<h2 is-upgraded><strong>Scripting With Style</strong></h2>
+<p>In this lab we shall cover the fundamentals of CSS</p>
+<h2 is-upgraded><strong>Task 1</strong></h2>
+<p>Follow the link below to open codesandbox. Fork the project then sign in.</p>
+<p><a href="https://repl.it/@Snickdx/INFO-1601-Lab-3" target="_blank"><paper-button class="colored" raised>Open Lab 3</paper-button></a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="The Box Model" duration="0">
+        <p>Every HTML element has the following properties which determine their sizing and layout.</p>
+<ul>
+<li>Height</li>
+<li>Width</li>
+<li>Padding: Spacing within an element</li>
+<li>Border: The edges of the element</li>
+<li>Margin: Spacing outside the element</li>
+</ul>
+<p>Together these properties make up the box model</p>
+<p class="image-container"><img style="width: 482.50px" src="img\58afda24fe5c06d3.png"></p>
+<p>Padding, margin and border can have specific styles applied to its four directions, top, right, bottom and left. </p>
+<h2 is-upgraded><strong>Task 2</strong></h2>
+<p>Update <code>index.html</code> the following and view the result</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&#34;utf-8&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width&#34;&gt;
+    &lt;title&gt;repl.it&lt;/title&gt;
+    &lt;link href=&#34;style.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34; /&gt;
+        &lt;style&gt;
+                div{
+                        background-color: lightgrey;
+                        width: 300px;
+                        border-bottom: solid;
+                        padding: 50px;
+                        margin:20px 10px 40px 20px;
+                }
+        &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+        &lt;div&gt;
+                This the div content
+        &lt;/div&gt;
+    &lt;script src=&#34;script.js&#34;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>Open the preview in a new tab by clicking the &#34;Open in new tab&#34; (<img style="width: 37.72px" src="img\71a5751c4c90cb80.png">) button.</p>
+<p>In the new tab right click the element and select inspect (chrome). This will open the chrome dev tools debugger and allow you to visualize the box model of the element.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\dce593a9c4d694de.png"></p>
+<p>If you want the same value for all directions simply use the generic property and provide the single value. <br>Example: <code>padding : 50px</code></p>
+<p>However, if you want the same value specified for all directions then simply provide the single value to the generic property. <br>Example: <code>border-bottom: solid</code></p>
+<p>If you want to style all directions with different values then the generic property can be used but with multiple values in the order top, right, bottom and left. </p>
+<p>Example: <code>margin: 20px 10px 40px 20px</code></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Display" duration="0">
+        <p>Most elements have an inherent display property which has the value <code>block</code> or <code>inline</code>. There can be 4 possible values for display.</p>
+<ul>
+<li><code>block</code>: The element always starts on a newline and takes up full width of its parent.</li>
+<li><code>inline</code>: The element only takes up the necessary space for it to be displayed</li>
+<li><code>none</code>: Hides an element from the dom but preserving its space</li>
+<li><code>grid</code>: Used for grid layout</li>
+<li><code>flex</code>: Used for flex layout</li>
+</ul>
+<h2 is-upgraded><strong>Task 3</strong></h2>
+<p>Use the :hover pseudo class to hide elements of an ordered list when the mouse hovers over them.</p>
+<p>Solution:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&#34;utf-8&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width&#34;&gt;
+    &lt;title&gt;repl.it&lt;/title&gt;
+    &lt;link href=&#34;style.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34; /&gt;
+        &lt;style&gt;
+        li:hover {
+           display: none
+        }
+        &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+        &lt;ol&gt;
+           &lt;li&gt;Item 1&lt;/li&gt;
+           &lt;li&gt;Item 2&lt;/li&gt;
+           &lt;li&gt;Item 3&lt;/li&gt;
+           &lt;li&gt;Item 4&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;script src=&#34;script.js&#34;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Text" duration="0">
+        <p>Text elements can be styled with several properties some of them are as follows:</p>
+<ul>
+<li><code>color:</code> changes the colour</li>
+<li><code>line-height:</code> sets the vertical spacing of text lines</li>
+<li><code>text-decoration-line:</code>  <code>underline, overline, line-through</code></li>
+<li><code>text-decoration-color: red, blue, #F5F5f5</code></li>
+<li><code>text-decoration-style: solid, wavy, dotted, dashed, double</code></li>
+<li><code>text-decoration: a combination of line, color and style eg underline wavy blue</code></li>
+<li><code>vertical-align:</code> vertical alignment; <code>baseline, text-top, text-bottom, sub, super</code></li>
+<li><code>text-align:</code> horizontal alignment; <code>left, center, right, justify</code></li>
+</ul>
+<h2 is-upgraded><strong>Task 4</strong></h2>
+<p>Edit <code>index.html</code> to complete the following</p>
+<ol type="1" start="1">
+<li>Add a section element to the page with a height of 80vh which should contain the following elements</li>
+<li>Add a heading1 element with the content &#34;Sample Poem&#34;</li>
+<li>Add a heading 2 element with the title of a poem of your choice</li>
+<li>Add a poem of you choice to the page placing each stanza in a paragraph tag</li>
+<li>Center align the heading 2 element</li>
+<li>Justify the content of the paragraphs</li>
+<li>Add a solid black over and underline to the heading 2</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Fonts" duration="0">
+        <p>We use the following properties to affect the display of fonts of the text in an element.</p>
+<ul>
+<li>font-family: Affects the typeface used eg <code>Times new Roman</code> , <code>Arial</code></li>
+<li>font-size: Affects the size eg <code>34px</code></li>
+<li>font-style: <code>normal, italic, oblique</code></li>
+<li>font-weight: Affects the thickness of the font; <code>normal, bold, bold, lighter, 100-900</code></li>
+</ul>
+<h2 is-upgraded><strong>Task 5</strong></h2>
+<p>Edit index.html to complete the following on the poem from Task 4</p>
+<ol type="1" start="1">
+<li>Using span elements and an appropriate class style the first word of every paragraph to be bold.</li>
+<li>Style all paragraphs to have a width of 50vw and set the left and right margins to auto</li>
+</ol>
+<p>Your result should look something like.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\ae6a260fc15d2113.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Background" duration="0">
+        <p>We can style the background of your elements to be an image, solid color or gradient.</p>
+<p>Keeping your section from the previous task  add the following markup and styles to <code>index.html.</code></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&#34;utf-8&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width&#34;&gt;
+    &lt;title&gt;repl.it&lt;/title&gt;
+    &lt;link href=&#34;style.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34; /&gt;
+    &lt;style&gt;
+          .bold{
+                 font-weight: bold;
+           }
+            
+           h2{
+                 text-align: center;
+                 text-decoration: underline overline solid black;
+           }
+
+           p{
+                 text-align: justify;
+                 width:50vw;
+                 margin-left: auto;
+                 margin-right: auto;
+           }
+
+           section{
+                 border-bottom: 5px solid black;
+           }
+
+           #section1{
+                 height: 80vh;
+           }
+
+           #section1::before{
+             background-image: url(&#34;https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80&#34;);
+             background-size: stretch;
+             background-position: center;
+             content: &#34;&#34;;
+             position: absolute;
+             width:100%;
+             height: 100%;
+             z-index: -2;
+             opacity: 0.3;
+           }
+
+          #section2{
+             padding: 2em;
+             color: white;
+             height: 60vh;
+             background: rgb(131,58,180);
+             background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,211,253,1) 50%, rgba(252,176,69,1) 100%);
+           }
+
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;section id=&#34;section1&#34;&gt;
+      &lt;!-- your markup for section1 --&gt;
+      &lt;!-- This is how html comments are done btw --&gt;
+    &lt;/section&gt;
+    &lt;section id=&#34;section2&#34;&gt;
+         &lt;h1&gt;Section 2&lt;/h1&gt;
+    &lt;/section&gt;
+    &lt;script src=&#34;script.js&#34;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>This should apply an image background to section 1 and a gradient background to section 2.</p>
+<p>The selector ‘::&#39; is used to specify pseudo elements. We use the pseudo element &#34;before&#34; to write a background image to the dom before the section 1 element. The styles within the selector is just a recipe we follow for displaying background images while keeping the text readable.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\e7e4d2086b2ed5ab.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Borders" duration="0">
+        <p>Just like margin, borders of all 4 directions of an element can be set in one line or individually. Some properties for styling borders are as follows:</p>
+<ul>
+<li><code>border-style:</code> type of border <code>dotted, dashed, solid, double, groove, hidden, none</code></li>
+<li><code>border-color</code>: sets the colour</li>
+<li><code>border-radius:</code> sets the curvature of the border <code>eg 5px</code></li>
+<li><code>border-width:</code> sets the thickness eg <code>10px;</code></li>
+<li><code>border-[direction]-[property]:</code> styles an individual direction of a border eg <code>border-top-width</code></li>
+<li><code>border:</code> used to set all properties in all directions in one line eg. <code>5px dotted red </code></li>
+</ul>
+<h2 is-upgraded><strong>Task</strong></h2>
+<p>For each section add a solidwhite bottom border of 5px thick.</p>
+<p>You should now have a border separating your sections.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\14462476b9149607.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Outline" duration="0">
+        <p>Outlines are drawn outside of an element&#39;s border and are used to highlight an element.</p>
+<p>Outlines are styled similarly to borders with the following properties and values:</p>
+<ul>
+<li><code>outline-style:</code> type of outline <code>dotted, dashed, solid, double, groove, hidden, none</code></li>
+<li><code>outline-color</code>: sets the colour</li>
+<li><code>outline-radius:</code> sets the curvature of the outline <code>eg 5px</code></li>
+<li><code>outline-width:</code> sets the thickness eg <code>10px;</code></li>
+<li><code>outline-[direction]-[property]:</code> styles an individual direction of a outline eg <code>outline-top-width</code></li>
+<li><code>outline:</code> used to set all properties in all directions in one line eg. <code>5px dotted red </code></li>
+</ul>
+<h2 is-upgraded><strong>Task 8</strong></h2>
+<p>User the :hover pseudo class to add a red double outline 2px thick around any paragraph which is hovered by the moust.</p>
+<p>Solution</p>
+<pre><code>p:hover{
+        outline: 2px double red;
+}</code></pre>
+<p>This should create the following effect.<img style="width: 600.00px" src="img\8b20375d17fc2e5b.gif"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Overflow" duration="0">
+        <p>Overflow is used to make content scrollable on a page when it cannot fit into the space allocated for it. Typically we want to avoid nested scrollbars in our application so if elements on a page are scrollable in a direction then the page itself should not be scrollable in the same direction. The overflow properties are as follows:</p>
+<ul>
+<li><code>overflow-x:</code> affects horizontal scrolling</li>
+<li><code>overflow-y:</code> affects vertical scrolling</li>
+<li><code>overflow:</code> affects scrolling in both directions.</li>
+</ul>
+<p>Overflow properties can have the following values:</p>
+<ul>
+<li><code>visible</code> Contents are allowed to spill outside of their elements box (default);</li>
+<li><code>hidden</code> Removes the scrollbar</li>
+<li><code>scroll</code> Adds a scroll bar to make content viewable and fit in the element.</li>
+<li><code>auto</code> Makes the content obey the element width and become scrollable if it cannot fit in the element</li>
+</ul>
+<p>Let&#39;s resize our sections so that they both fit on the page.</p>
+<p>Update the styles in <code>index.html</code> to the following.</p>
+<pre><code>&lt;style&gt;
+.bold{
+  font-weight: bold;
+}
+
+h2{
+  text-align: center;
+  text-decoration: underline overline solid black;
+}
+
+p{
+  text-align: justify;
+  width:50vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section{
+  border-bottom: 5px solid black;
+  height: 40vh;
+  overflow-y:scroll
+}
+
+#section1::before{
+  background-image: url(&#34;https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80&#34;);
+  background-size: stretch;
+  background-position: center;
+  content: &#34;&#34;;
+  position: absolute;
+  width:100%;
+  height: 40vh;
+  z-index: -2;
+  opacity: 0.3;
+}
+
+#section2{
+  padding: 2em;
+  color: white;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,211,253,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+p:hover{
+  outline: 2px double red;
+}
+&lt;/style&gt;</code></pre>
+<p>Now both sections fit on the page with their individual scrollbars. Notice there is no nested scrolling. </p>
+<p class="image-container"><img style="width: 563.00px" src="img\ae355d6917c3a88e.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Shadows" duration="0">
+        <p>Shadows add depth to the elements on a webpage and come in two properties.</p>
+<ul>
+<li>box-shadow: used to add a shadow on an element:</li>
+<li>text-shadow: used to add a shadow on text</li>
+</ul>
+<p>We can use tools like a <a href="https://www.cssmatic.com/box-shadow" target="_blank">box shadow generator</a> to generate the styles needed for our desired shadow effect.</p>
+<h2 is-upgraded>Task<strong> 10</strong></h2>
+<p>Add a 400px by 300px div in the center of the second section with a white background colour, 4px border radius, a 5px padding and a box shadow of your choice using the generator. The div should have a heading2 with the text &#34;My Div&#34; in black and centered and no text decoration.</p>
+<pre><code>div{
+  width: 400px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: white;
+  color: black;
+  text-align: center;
+  box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2);
+  border-radius:4px;
+  padding: 5px;
+}
+
+div&gt; h2{
+  text-decoration: none;
+}</code></pre>
+<p>Notice we must select the h2 child element and apply a text decoration of none so that it overrides the other h2 style written in task 4.</p>
+<p>This should produce the following result.</p>
+<p class="image-container"><img style="width: 566.00px" src="img\17d451f9750ab1f7.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Conclusion" duration="0">
+        <p>That&#39;s it for your first real dive into css, the next lab will go into things like animations and layout.</p>
+<h2 is-upgraded><strong>References</strong></h2>
+<p><a href="https://css-tricks.com/almanac/properties/b/backdrop-filter/" target="_blank">Backdrop Filter</a></p>
+<p><a href="https://cssgradient.io/" target="_blank">Gradient Generator</a></p>
+<p><a href="https://www.cssmatic.com/box-shadow" target="_blank">Box Shadow Generator</a></p>
+<p><a href="https://love2dev.com/blog/responsive-hero-background-opacity/" target="_blank">Background Images With Text</a></p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+
+</body>
+</html>
