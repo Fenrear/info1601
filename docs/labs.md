@@ -4,4 +4,4 @@
 
 ## [Lab2: HTML & CSS Fundamentals](./lab2)
 
-## [Lab2: CSS Fundamentals 2](./lab3)
+## [Lab3: CSS Fundamentals 2](./lab3)

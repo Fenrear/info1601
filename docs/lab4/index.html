@@ -1,0 +1,154 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Lab 4 - CSS Fundamentals 2</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid="UA-154889698-1"
+                  id="lab4"
+                  title="Lab 4 - CSS Fundamentals 2"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Introduction" duration="0">
+        <p class="image-container"><img style="width: 403.50px" src="img\4a39f153e38212b4.png"></p>
+<h2 is-upgraded><strong>Scripting With Style Part 2</strong></h2>
+<p>In this lab we shall cover further topics in CSS.</p>
+<h2 is-upgraded><strong>Task 1</strong></h2>
+<p>Follow the link below to open codesandbox. Fork the project then sign in.</p>
+<p><a href="https://repl.it/@Snickdx/INFO-1601-Lab-3" target="_blank"><paper-button class="colored" raised>Open Lab 3</paper-button></a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Pseudo Elements" duration="0">
+        <p>Pseudo elements allow us to style specific parts of an element. They are as follows:</p>
+<ul>
+<li><code>::after</code>: used with the <code>content</code> property to insert text after the content of an element</li>
+<li><code>::before:</code>used with the <code>content</code> property to insert text after the content of an element</li>
+<li><code>::first-letter</code>: selects the first letter of text content</li>
+<li><code>::first-line</code>: selects the first-line of text content</li>
+<li><code>::selection</code>: selects the text content highlighted by the user</li>
+</ul>
+<p class="image-container"><img style="width: 624.00px" src="img\664de67b541f37af.png"></p>
+<h2 is-upgraded><strong>Task 3</strong></h2>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Box Sizing" duration="0">
+        <p>Box sizing refers to how css measures the size of an element. Every element has a box-sizing property which can have the following values:</p>
+<ul>
+<li><code>content-box</code> - The element&#39;s size is measured by its content.</li>
+<li><code>border-box</code> - The element&#39;s size is measured by its border.</li>
+</ul>
+<p>The default value for all elements is content-box. However, this can be undesirable for layout as adding padding causes elements to grow larger.</p>
+<p class="image-container"><img style="width: 598.00px" src="img\a0f338ca73c106cb.png"></p>
+<p>When we use <code>border-box</code>, adding padding trades off content space for padding space so the element size remains the same.</p>
+<h2 is-upgraded><strong>Task 3</strong></h2>
+<p>As we will be doing some precise layout in this lab let&#39;s style all elements to use <code>border-box</code> by using the wildcard selector.</p>
+<pre><code>&lt;style&gt;
+   * {
+     box-sizing: border-box;
+   }
+&lt;/style&gt;</code></pre>
+<p>. </p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Positioning" duration="0">
+        <p>The position property alters how other positioning properties affect the element&#39;s position. The following are the values for position:</p>
+<ul>
+<li><code>static</code> - default, unaffected by the positioning properties</li>
+<li><code>relative</code> - treat the top left corner of the element&#39;s current position as the origin point</li>
+<li><code>absolute</code> - treat the top left corner of its parent as origin point</li>
+<li><code>fixed</code> - treat the top left corner of the browser window as the origin point, unaffected by scrolling</li>
+<li><code>sticky</code> - starts as relative but becomes fixed after the user scrolls past a given offset</li>
+</ul>
+<p class="image-container"><img style="width: 432.50px" src="img\14003d4e2bf43606.png"></p>
+<h2 is-upgraded><strong>Positioning Properties</strong></h2>
+<p>After the position property has been set to any value other than static then the following properties can be used to position the element.</p>
+<table>
+<tr><td colspan="1" rowspan="1"><p>Property</p>
+</td><td colspan="1" rowspan="1"><p>Relative</p>
+</td><td colspan="1" rowspan="1"><p>Absolute</p>
+</td><td colspan="1" rowspan="1"><p>Fixed</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p><code>top:</code></p>
+</td><td colspan="1" rowspan="1"><p>Moves the element downward</p>
+</td><td colspan="1" rowspan="1"><p>Space between top edge of element and its parent</p>
+</td><td colspan="1" rowspan="1"><p>Space between top edge of element and the window</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p><code>right:</code></p>
+</td><td colspan="1" rowspan="1"><p>Moves the element to the left</p>
+</td><td colspan="1" rowspan="1"><p>Space between right edge of element and its parent</p>
+</td><td colspan="1" rowspan="1"><p>Space between right edge of element and the window</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p><code>bottom:</code></p>
+</td><td colspan="1" rowspan="1"><p>Moves the element upward</p>
+</td><td colspan="1" rowspan="1"><p>Space between bottom edge of element and its parent</p>
+</td><td colspan="1" rowspan="1"><p>Space between bottom edge of element and the window</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p><code>left:</code></p>
+</td><td colspan="1" rowspan="1"><p>Moves the element to the right</p>
+</td><td colspan="1" rowspan="1"><p>Space between left edge of element and its parent</p>
+</td><td colspan="1" rowspan="1"><p>Space between left edge of element and the window</p>
+</td></tr>
+</table>
+<ul>
+<li>clip: used to cut out a portion of an absolute positioned element</li>
+<li>z-index: used to arrange elements in front of each other in the case of overlap</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Flex Box" duration="0">
+        
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Media Queries" duration="0">
+        
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Animations" duration="0">
+        
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Conclusion" duration="0">
+        <p>That&#39;s it for your first real dive into css, the next lab will go into things like animations and layout.</p>
+<h2 is-upgraded><strong>References</strong></h2>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+
+</body>
+</html>

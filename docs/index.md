@@ -17,14 +17,14 @@ A QR code will be given for each lab. Scanning the QR code will take you to a fo
 
 <a href="https://www.the-qrcode-generator.com/scan" target="blank">Qr Code Scanner</a>
 
-## Lab Assignments (Updated 29/01/2020)
+## Lab Assignments (Updated 15/02/2020)
 
 !!! warning "Changing Lab Streams"
     If you need to change your assigned stream or you are not unassigned one; please fill out this <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeJyHCJg2nF-500p2K1C9mFoYzkGUkA1F6mTlX87KfXs1nwCA/viewform?usp=sf_link">Lab Form</a> to be reassigned.
 
-Lab Stream 1: Tuesday 8:00AM - 10:00AM <br/>
-Lab Stream 2: Wednesday 2:00PM - 4:00PM <br/>
-Lab Stream 3: Friday 3:00PM - 5:00PM
+Lab Stream 1: Tuesday 8:00AM - 10:00AM CSL2<br/>
+Lab Stream 2: Wednesday 2:00PM - 4:00PM CSL2<br/>
+Lab Stream 3: Friday 3:00PM - 5:00PM CSL2
 
 Please note due to size restrictions, requests for reassignments citing clashes with FOUN 1105 tutorial will not be facilitated as there are 49 other tutorials you can choose from.
 
@@ -57,7 +57,7 @@ Please note due to size restrictions, requests for reassignments citing clashes 
 | 816013000 | 1           |
 | 816013257 | 2           |
 | 816013791 | 3           |
-| 816014034 | 3           |
+| 816014034 | 2           |
 | 816014352 | 2           |
 | 816014699 | 2           |
 | 816015043 | 3           |
@@ -103,7 +103,7 @@ Please note due to size restrictions, requests for reassignments citing clashes 
 | 816019646 | 1           |
 | 816019696 | 2           |
 | 816019715 | 1           |
-| 816019788 | 1           |
+| 816019788 | 2           |
 | 816019853 | 2           |
 | 816019911 | 1           |
 | 816019921 | 2           |
@@ -131,7 +131,7 @@ Please note due to size restrictions, requests for reassignments citing clashes 
 | 816020654 | 3           |
 | 816020664 | 1           |
 | 816020695 | 2           |
-| 816020735 | 3           |
+| 816020735 | 2           |
 | 816020871 | 3           |
 | 816020890 | 2           |
 | 816020896 | 3           |
@@ -147,7 +147,7 @@ Please note due to size restrictions, requests for reassignments citing clashes 
 | 816021305 | 3           |
 | 816021350 | 1           |
 | 816021429 | 1           |
-| 816021447 | 2           |
+| 816021447 | 1           |
 | 816021543 | 3           |
 | 816021591 | 1           |
 | 816021684 | 2           |
@@ -159,12 +159,12 @@ Please note due to size restrictions, requests for reassignments citing clashes 
 | 816022295 | 2           |
 | 816022324 | 2           |
 | 816022348 | 3           |
+| 816022395 | 1           |
 | 816022470 | 3           |
 | 816022506 | 3           |
-| 816022556 | 3           |
+| 816022556 | 2           |
 | 816022655 | 2           |
-| 816022840 | 2           |
-| 816022840 | 2           |
+| 816022840 | 3           |
 | 816022905 | 3           |
 | 816023033 | 3           |
 | 816023061 | 2           |

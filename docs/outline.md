@@ -1,4 +1,4 @@
-<!----- Conversion time: 1.943 seconds.
+<!----- Conversion time: 2.144 seconds.
 
 
 Using this Markdown file:
@@ -10,8 +10,8 @@ Using this Markdown file:
 
 Conversion notes:
 
-* Docs to Markdown version 1.0β17
-* Tue Feb 04 2020 07:39:35 GMT-0800 (PST)
+* Docs to Markdown version 1.0β18
+* Mon Feb 17 2020 11:12:43 GMT-0800 (PST)
 * Source doc: https://docs.google.com/open?id=16BuLLfvj71yS0hO_dN6sClXoKb-4ZDhl5P6NVIfZL8w
 ----->
 
@@ -180,7 +180,7 @@ A web presence is necessary in today’s business models not just for advertisem
     47. Local Storage
     48. Indexed DB
 9. 3rd Party Libraries & Frameworks
-    49. Bootstrap Introduction
+    49. Materialize Introduction
     50. React Introduction 
 
 
@@ -315,8 +315,6 @@ Assessment 1: HTML
    </td>
    <td>Lab 5 Intro JS \
 (1hr lab in Streams 2 & 3)
-<p>
-Assessment 2: CSS
    </td>
    <td>Carnival Mon 24/02/2020 \
 Carnival Tue 25/02/2020
@@ -329,8 +327,9 @@ Carnival Tue 25/02/2020
    </td>
    <td>Web Performance & Optimization
    </td>
-   <td>Lab 6 Ajax & Templating \
-Assessment 3: Advanced CSS
+   <td>Lab 6 AJAX \
+Assessment 2: CSS \
+
    </td>
    <td>
    </td>
@@ -342,9 +341,8 @@ Assessment 3: Advanced CSS
    </td>
    <td>3rd Party Libraries, Frameworks
    </td>
-   <td>Lab 7 Materialize Introduction
-<p>
-Assessment 4: JS & DOM
+   <td>Lab 7 Materialize CSS & Form Submission \
+Assessment 3: Advanced CSS
    </td>
    <td>
    </td>
@@ -356,8 +354,8 @@ Assessment 4: JS & DOM
    </td>
    <td>The Critical Rendering Path
    </td>
-   <td> \
-Assessment 5 : AJAX & Templating \
+   <td>Lab 8: 3rd Party APIs \
+Assessment 4: JS & DOM \
 Project Released
    </td>
    <td>
@@ -370,7 +368,8 @@ Project Released
    </td>
    <td>Native Web APIs
    </td>
-   <td>Lab 8 3rd Party APIs \
+   <td>Assessment 5 : AJAX \
+Lab 9: Web APIs \
 
    </td>
    <td>
@@ -383,7 +382,7 @@ Project Released
    </td>
    <td>The Web Platform
    </td>
-   <td>Lab 9 Web APIs \
+   <td>Lab 10: React Intro \
 
    </td>
    <td>Spiritual Baptist 30/03/2020
@@ -396,7 +395,7 @@ Project Released
    </td>
    <td>Holiday
    </td>
-   <td>Lab 10 React Intro (1hr lab in Streams 1 & 2)
+   <td>Lab 11: React 2 (1hr lab in Streams 1 & 2)
    </td>
    <td>Good Friday 10/04/2020
    </td>
@@ -417,4 +416,4 @@ Project Released
 
 
 
-<!-- Docs to Markdown version 1.0β17 -->
+<!-- Docs to Markdown version 1.0β18 -->
