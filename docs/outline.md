@@ -1,4 +1,4 @@
-<!----- Conversion time: 2.144 seconds.
+<!----- Conversion time: 1.909 seconds.
 
 
 Using this Markdown file:
@@ -11,7 +11,7 @@ Using this Markdown file:
 Conversion notes:
 
 * Docs to Markdown version 1.0β18
-* Mon Feb 17 2020 11:12:43 GMT-0800 (PST)
+* Thu Mar 05 2020 14:55:24 GMT-0800 (PST)
 * Source doc: https://docs.google.com/open?id=16BuLLfvj71yS0hO_dN6sClXoKb-4ZDhl5P6NVIfZL8w
 ----->
 
@@ -41,7 +41,7 @@ Conversion notes:
 
 **LECTURER: **Mr. Nicholas Mendez nicholas.mendez@sta.uwi.edu
 
-**OFFICE HOURS**
+**OFFICE HOURS: **Firdays 10:00AM - 12:00PM
 
 **TUTOR: **Ms Karleen Lall
 
@@ -226,6 +226,9 @@ Interactive lectures and lab demonstrations will be used to gain a deeper unders
 [https://www.w3schools.com/](https://www.w3schools.com/)
 
 
+## 
+
+
 ## COURSE CALENDAR: 
 
 
@@ -274,7 +277,7 @@ Interactive lectures and lab demonstrations will be used to gain a deeper unders
    <td>CSS Fundamentals 2 \
 
    </td>
-   <td>Lab 2 HTML & CSS Fundamentals \
+   <td>Lab 2 HTML & CSS Intro \
 
    </td>
    <td>
@@ -287,7 +290,7 @@ Interactive lectures and lab demonstrations will be used to gain a deeper unders
    </td>
    <td>UI/UX Fundamentals & Responsive Design
    </td>
-   <td>Lab 3 CSS Fundamentals 2
+   <td>Lab 3 CSS Fundamentals
    </td>
    <td>
    </td>
@@ -297,10 +300,9 @@ Interactive lectures and lab demonstrations will be used to gain a deeper unders
    </td>
    <td>16/02/2020
    </td>
-   <td>Javascript Fundamentals \
-
+   <td>3rd Resources
    </td>
-   <td>Lab 4 Advanced CSS \
+   <td>Lab 4 CSS Fundamentals 2 \
 Assessment 1: HTML
    </td>
    <td>
@@ -311,9 +313,10 @@ Assessment 1: HTML
    </td>
    <td>23/02/2020
    </td>
-   <td>HTTP, Ajax & Templating
+   <td>Javascript Fundamentals \
+
    </td>
-   <td>Lab 5 Intro JS \
+   <td>Lab 5 Materialize CSS & Transitions \
 (1hr lab in Streams 2 & 3)
    </td>
    <td>Carnival Mon 24/02/2020 \
@@ -325,24 +328,23 @@ Carnival Tue 25/02/2020
    </td>
    <td>01/03/2020
    </td>
-   <td>Web Performance & Optimization
+   <td>HTTP & Ajax
    </td>
-   <td>Lab 6 AJAX \
-Assessment 2: CSS \
-
+   <td>Lab 6 Intro JS \
+Assessment 2: CSS
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td>
+   <td>8
    </td>
    <td>08/03/2020
    </td>
-   <td>3rd Party Libraries, Frameworks
+   <td>The Critical Rendering Path
    </td>
-   <td>Lab 7 Materialize CSS & Form Submission \
-Assessment 3: Advanced CSS
+   <td>Lab 7 JS DOM & AJAX \
+
    </td>
    <td>
    </td>
@@ -352,10 +354,11 @@ Assessment 3: Advanced CSS
    </td>
    <td>15/03/2020
    </td>
-   <td>The Critical Rendering Path
+   <td>Web Performance & Optimization
    </td>
-   <td>Lab 8: 3rd Party APIs \
-Assessment 4: JS & DOM \
+   <td>Lab 8 JS Form Submission & Chrome Debugger \
+Assessment 3: Advanced CSS
+<p>
 Project Released
    </td>
    <td>
@@ -368,8 +371,7 @@ Project Released
    </td>
    <td>Native Web APIs
    </td>
-   <td>Assessment 5 : AJAX \
-Lab 9: Web APIs \
+   <td>Lab 9 Web APIs \
 
    </td>
    <td>
@@ -382,8 +384,8 @@ Lab 9: Web APIs \
    </td>
    <td>The Web Platform
    </td>
-   <td>Lab 10: React Intro \
-
+   <td>Assessment 4: JS & DOM \
+Lab 10 React Intro
    </td>
    <td>Spiritual Baptist 30/03/2020
    </td>
@@ -395,7 +397,8 @@ Lab 9: Web APIs \
    </td>
    <td>Holiday
    </td>
-   <td>Lab 11: React 2 (1hr lab in Streams 1 & 2)
+   <td>Assessment 5: AJAX \
+ (Done in Streams 1 & 2)
    </td>
    <td>Good Friday 10/04/2020
    </td>
@@ -407,7 +410,8 @@ Lab 9: Web APIs \
    </td>
    <td>
    </td>
-   <td>Project Presentation In Labs
+   <td>Project Presentations \
+
    </td>
    <td>Easter Monday 13/04/2020
    </td>

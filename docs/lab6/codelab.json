@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-03-04T14:43:04Z",
+  "id": "lab6",
+  "duration": 70,
+  "title": "Lab 6 - Javascript Introduction",
+  "authors": "Nicholas Mendez",
+  "summary": "In this code lab you will be exposed to the fundamentals of the Javascript Programming Language",
+  "source": "1Et2TMvY0Zbn4BNWsi9bSr84mwBPzeU6Cg9269DwT9-k",
+  "theme": "web",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "Web"
+  ],
+  "tags": [
+    "web"
+  ],
+  "ga": "UA-154889698-1",
+  "url": "lab6"
+}

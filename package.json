@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "mkdocs build && workbox injectManifest",
-    "build-serve": "npm run build && cd site && python3 -m http.server"
+    "build-serve": "npm run build && cd site && python3 -m http.server",
+    "sync-fork":"git fetch upstream"
   },
   "keywords": [],
   "author": "",

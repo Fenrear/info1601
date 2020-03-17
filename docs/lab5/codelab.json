@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-02-26T16:02:49Z",
+  "id": "lab5",
+  "duration": 0,
+  "title": "Lab 5 - Materialize CSS \u0026 Transitions",
+  "authors": "Nicholas Mendez",
+  "summary": "This code lab is the final lab on css, we shall be making use of a 3rd party css library and apply animations to them.",
+  "source": "13EZhmv_rB6jgBJ5jeVOuO7ae5FIc93AnyQdtqeaA_tk",
+  "theme": "web",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "Web"
+  ],
+  "tags": [
+    "web"
+  ],
+  "ga": "UA-154889698-1",
+  "url": "lab5"
+}

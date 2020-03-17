@@ -48,7 +48,11 @@
 <li><code>::selection</code>: selects the text content highlighted by the user</li>
 </ul>
 <p class="image-container"><img style="width: 624.00px" src="img\664de67b541f37af.png"></p>
-<h2 is-upgraded><strong>Task 3</strong></h2>
+<h2 is-upgraded><strong>Task 2</strong></h2>
+<ul>
+<li>Create a heading 1 with content &#34;Welcome&#34;</li>
+<li>Style the first letter of the heading to be in blue</li>
+</ul>
 
 
       </google-codelab-step>
@@ -121,24 +125,410 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="Flex Box" duration="0">
+      <google-codelab-step label="Flexbox" duration="0">
+        <p>Flex box is a more modern and easier method for doing layout than float. In order to start using the flex properties we need to ensure the parent of any element we want to layout has its <code>display</code> property to <code>flex.</code></p>
+<p>Update <code>index.html</code> to set the body tag to flex display.</p>
+<pre><code>&lt;style&gt;
+        * {
+                box-sizing: border-box;
+        }
+
+        body{
+                display: flex;
+        }
+&lt;/style&gt;</code></pre>
+<p>Next let&#39;s add some layout elements and styling so we can see them on the page.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;style&gt;
+        * {
+                box-sizing: border-box;
+                margin: 5px;
+                padding: 1em;
+        }
+
+        header, footer{
+                color: white;
+                background-color:  #1976D2;
+        }
+
+        aside{
+                color: #212121;
+                background-color: #BBDEFB;
+        }
+        section{
+                background-color: #FF4081;
+                color: white;
+        }
+
+        main{
+                background-color: #2196F3;
+                color: white;
+        }
+
+        body{
+                display: flex;
+                background-color: #FFFFFF;
+        }
+        &lt;/style&gt;
+&lt;body&gt;
+
+        &lt;header&gt;Header&lt;/header&gt;
+        &lt;aside&gt;
+                Aside
+                &lt;section&gt;Section 1&lt;/section&gt;
+                &lt;section&gt;Section 2&lt;/section&gt;
+        &lt;/aside&gt;
+        &lt;main&gt;Main&lt;/main&gt;
+        &lt;footer&gt;Footer&lt;/footer&gt;
+
+    
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>This markup and styles will give the following result. Notice how every top level element is aligned in a row and is evenly sized because of the flex display of the body.</p>
+<h2 is-upgraded><img style="width: 624.00px" src="img\398cf57af230ee4f.png"></h2>
+<h2 is-upgraded><strong>Flex-Direction</strong></h2>
+<p>The elements are aligned horizontally because the default value of flex-direction is row. However we would want to change this to columns so that header is at the top and footer is at the bottom of the page.</p>
+<pre><code>body{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}</code></pre>
+<p>When we add flex-direction notice the elements are aligned within a single column.</p>
+<p class="image-container"><img style="width: 426.50px" src="img\a7c72328e663efc8.png"></p>
+<p>Next we want the aside and main elements to be next to each other. In terms of flexbox this can be achieved by having an element with flex-direction:row within the column of the body.</p>
+<p>Update index.html to group the aside and main element within a row by using a div tag the with an appropriate style.</p>
+<p>Index.html should now look like</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;style&gt;
+        * {
+                box-sizing: border-box;
+                margin: 5px;
+                padding: 1em;
+        }
+
+        header, footer{
+                color: white;
+                background-color:  #1976D2;
+        }
+
+        aside{
+                color: #212121;
+                background-color: #BBDEFB;
+        }
+        section{
+                background-color: #FF4081;
+                color: white;
+        }
+
+        main{
+                background-color: #2196F3;
+                color: white;
+        }
+
+        body{
+                display: flex;
+                flex-direction: column;
+                background-color: #FFFFFF;
+        }
+
+        .row{
+                display: flex;
+                flex-direction: row;
+        }
+
+        .col{
+                display: flex;
+                flex-direction: column;
+        }
+
+        &lt;/style&gt;
+&lt;body&gt;
+
+        &lt;header&gt;Header&lt;/header&gt;
+        &lt;div class=&#34;row&#34;&gt;
+                &lt;aside class=&#34;col&#34;&gt;
+                Aside
+                &lt;section&gt;Section 1&lt;/section&gt;
+                &lt;section&gt;Section 2&lt;/section&gt;
+        &lt;/aside&gt;
+        &lt;main&gt;Main&lt;/main&gt;
+        &lt;/div&gt;
         
+        &lt;footer&gt;Footer&lt;/footer&gt;
+
+    
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>Using just rows and columns we can achieve our desired layout of our elements.</p>
+<p>Next we want to switch to relative sizing so update the following selectors as follows.</p>
+<ul>
+<li>Removing the margins and padding from the universal selector</li>
+<li>Allow body to take up the entire viewport</li>
+<li>Size header and foot to take up 10% of their parent&#39;s height.</li>
+<li>Size our .row div to take up 80% of its parent&#39;s height</li>
+</ul>
+<pre><code>* {
+ box-sizing: border-box;
+}
+
+
+body{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        height: 100vh;
+        width: 100vw;
+            margin: 0;
+}
+
+
+div.row{
+        height: 80%;
+}</code></pre>
+<p>We should now see that our markup takes up all the space on the page</p>
+<p class="image-container"><img style="width: 440.50px" src="img\707042b26f5d3934.png"></p>
+<h2 is-upgraded><strong>Flex-Grow Property</strong></h2>
+<p>We can use the flex-basis property to affect the sizing of our elements. Flex-grow determines how much an element can grow in size relative to the other children of the flex container.</p>
+<p>Lets update index.html to allow a 3:7 ratio between the length of the aside and main element respectively by using flex grow. We will apply flex grow to our header, footer and div as well.</p>
+<p>Update Index.html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+        &lt;meta charset=&#34;UTF-8&#34;&gt;
+        &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;style&gt;
+* {
+        box-sizing: border-box;
+}
+
+header, footer, section, aside, main{
+        padding: 1em;
+}
+
+
+header, footer{
+        color: white;
+        background-color:  #1976D2;
+        flex-grow: 1;
+}
+
+aside{
+        color: #212121;
+        background-color: #BBDEFB;
+        flex-grow: 3;
+}
+section{
+        background-color: #FF4081;
+        color: white;
+}
+
+main{
+        background-color: #2196F3;
+        color: white;
+        flex-grow: 7;
+}
+
+body{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        height: 100vh;
+        width: 100vw;
+        margin:0;
+}
+
+.row{
+        display: flex;
+        flex-direction: row;
+}
+
+div.row{
+        flex-grow: 8;
+}
+
+.col{
+        display: flex;
+        flex-direction: column;
+}
+
+&lt;/style&gt;
+&lt;body&gt;
+
+&lt;header&gt;Header&lt;/header&gt;
+&lt;div class=&#34;row&#34;&gt;
+                &lt;aside class=&#34;col&#34;&gt;
+                Aside
+                &lt;section&gt;Section 1&lt;/section&gt;
+                &lt;section&gt;Section 2&lt;/section&gt;
+        &lt;/aside&gt;
+        &lt;main&gt;Main&lt;/main&gt;
+&lt;/div&gt;
+
+&lt;footer&gt;Footer&lt;/footer&gt;
+
+        
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>We also add some padding to some of our elements as well so now the result should look like</p>
+<p class="image-container"><img style="width: 624.00px" src="img\428d81cce89519e9.png"></p>
+<h2 is-upgraded><strong>Justify Content</strong></h2>
+<p>We can align content within flex containers by using the justify content property which can have the following values:</p>
+<ul>
+<li>flex-start : Align items left of row or top of column.</li>
+<li>flex-end: Align items right of row or bottom of column.</li>
+<li>center: Center align elements</li>
+</ul>
+<p>Lets style our sections to be centered, add a flex-grow to them and a margin. Also remove the &#34;Aside&#34; text so that the sections are the only children of the aside element.</p>
+<pre><code>aside{
+        display: flex;
+        justify-content: center;
+        color: #212121;
+        background-color: #BBDEFB;
+        flex-grow: 3;
+}
+section{
+        background-color: #FF4081;
+        color: white;
+        flex-grow: 1;
+        margin: 0.5em;
+}</code></pre>
+<p>We should get the following result.</p>
+<p class="image-container"><img style="width: 624.00px" src="img\d30b5e2f6d79dbb9.png"></p>
+
 
       </google-codelab-step>
     
       <google-codelab-step label="Media Queries" duration="0">
-        
+        <p>We use media queries to allow our page&#39;s layout to respond to various screen sizes, hence achieving responsive design.</p>
+<p>Media queries simply apply a subset of css rules if a specified feature is present on the client such as:</p>
+<ul>
+<li>Size of the viewport/device</li>
+<li>Print mode</li>
+<li>Type of Device</li>
+<li>Orientation</li>
+</ul>
+<p>Arguably the most commonly used feature for responsive design is max-width.</p>
+<p>We shall apply a media query to reposition our row as a column if the device width is less than 600px.</p>
+<pre><code>@media screen and (max-width: 600px) {
+  div.row{
+        flex-direction: column;
+   }
+}</code></pre>
+<p>With this simple rule our css is overwritten if the window is sized under 600px.</p>
+<p>Finally index.html should look like</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+        &lt;meta charset=&#34;UTF-8&#34;&gt;
+        &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;style&gt;
+* {
+        box-sizing: border-box;
+}
 
-      </google-codelab-step>
-    
-      <google-codelab-step label="Animations" duration="0">
+header, footer, section, aside, main{
+        padding: 1em;
+}
+
+header, footer{
+        color: white;
+        background-color:  #1976D2;
+        flex-grow: 1;
+}
+
+aside{
+        display: flex;
+        justify-content: center;
+        color: #212121;
+        background-color: #BBDEFB;
+        flex-grow: 3;
+}
+section{
+        background-color: #FF4081;
+        color: white;
+        flex-grow: 1;
+        margin: 0.5em;
+}
+
+main{
+        background-color: #2196F3;
+        color: white;
+        flex-grow: 7;
+}
+
+body{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        height: 100vh;
+        width: 100vw;
+        margin:0;
+}
+
+.row{
+        display: flex;
+        flex-direction: row;
+}
+
+div.row{
+        flex-grow: 8;
+}
+
+.col{
+        display: flex;
+        flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  div.row{
+                flex-direction: column;
+        }
+}
+
+&lt;/style&gt;
+&lt;body&gt;
+
+&lt;header&gt;Header&lt;/header&gt;
+&lt;div class=&#34;row&#34;&gt;
+                &lt;aside class=&#34;col&#34;&gt;
+                &lt;section&gt;Section 1&lt;/section&gt;
+                &lt;section&gt;Section 2&lt;/section&gt;
+        &lt;/aside&gt;
+        &lt;main&gt;Main&lt;/main&gt;
+&lt;/div&gt;
+
+&lt;footer&gt;Footer&lt;/footer&gt;
+
         
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p class="image-container"><img style="width: 600.00px" src="img\1566dfede0e0074f.gif"></p>
+
 
       </google-codelab-step>
     
       <google-codelab-step label="Conclusion" duration="0">
-        <p>That&#39;s it for your first real dive into css, the next lab will go into things like animations and layout.</p>
+        <p>Congratulations we have implemented a basic responsive design. Flexbox is very powerful and makes layout easy once it&#39;s understood.</p>
 <h2 is-upgraded><strong>References</strong></h2>
+<p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">A complete guide to flexbox</a></p>
+<p><a href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp" target="_blank">Media Queries</a></p>
+<p><a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" target="_blank">Responsive Design and Media Queries</a></p>
 
 
       </google-codelab-step>

@@ -1,26 +1,33 @@
-# Home
 ## Announcements
+### Labs on Carnival Week
+Labs will be shortened to 1 hour this week so that it may run twice per lab stream. Students of stream 1 may attend any of the lab sessions on Wednesday and Friday of this week.
 
-Please ensure you fill out the contacts <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSduK8T1Mo-pVPfVoROsv41jiKoRj6SuhmXj7e9mpylFbNhHAA/viewform?usp=sf_link">form</a> to be added to the mailing list.
+### The Lecture of Week 8 13/04/2020 is Relocated to TCB 21
 
-<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSduK8T1Mo-pVPfVoROsv41jiKoRj6SuhmXj7e9mpylFbNhHAA/viewform?usp=sf_link">CONTACT FORM</a>
+## Important Links
 
-## [Advanced Computer Literacy](https://docs.google.com/document/d/1dDqwOBqGi9j5LS66CE3BWI-uV09s1A0WTi7cuG2jCqY/edit?usp=sharing)
+ * <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSduK8T1Mo-pVPfVoROsv41jiKoRj6SuhmXj7e9mpylFbNhHAA/viewform?usp=sf_link">Contact Form</a> : To receive important email notifications
+ * <a target="_blank" href="https://docs.google.com/document/d/1dDqwOBqGi9j5LS66CE3BWI-uV09s1A0WTi7cuG2jCqY/edit?usp=sharing">Computer Literacy</a> : Computing things you should know for this course.
+ * <a target="_blank" href="https://join.slack.com/t/intoweb/shared_invite/enQtOTIwNjk3ODA5MTQxLWNkNDAyN2EwYWIyNTM1YTg5MTFlNzg3YjgwNjc3N2Q0MTBjYWYzYmViZTA0YzY5MTczMjIwZWNmZDlmNTM1ZGI">Slack Workspace Invite</a> : To join the course slack workspace.
+ * <a target="_blank" href="https://intro-web.slack.com">Slack Workspace</a> : Link to logon to the slack workspace
+ * <a target="_blank" href="\\safstdcitsvr003\Data\Courses\Courses 2019-2020\BSc\INFO1601\">Course Folder in Lab</a>: Copy and paste ```\\safstdcitsvr003\Data\Courses\Courses 2019-2020\BSc\INFO1601\``` into ==WINDOWS EXPLORER== on a ==LAB MACHINE== to open the shared folder. [Make a shortcut](https://www.laptopmag.com/articles/make-desktop-shortcuts-windows-10) to the folder on your desktop.
+* <a target="_blank" href="https://docs.google.com/document/d/1qsMD8m9GNgyL8Q7c9XbQx2fKmz4fYI6iLV2wK0GpK-c/edit?usp=sharing">Lab Assessment Setup Guide</a> : You can follow this guide to practice setting up an assessment workspace on a ==lab machine== using this <a href="./demo.zip" download>demo.zip</a> file instead of the one mentioned in the guide. If you want to run the demo on your personal machine then you need to have [NodeJS](https://nodejs.org/en/download/) and [VS Code](https://code.visualstudio.com/download) installed first.
 
-## [Slack Group Invite Link](https://join.slack.com/t/intoweb/shared_invite/enQtOTIwNjk3ODA5MTQxLWNkNDAyN2EwYWIyNTM1YTg5MTFlNzg3YjgwNjc3N2Q0MTBjYWYzYmViZTA0YzY5MTczMjIwZWNmZDlmNTM1ZGI)
-Slack is a messaging and collaboration platform we shall use for labs and communication. 
 
-[Join the slack Channel](https://join.slack.com/t/intoweb/shared_invite/enQtOTIwNjk3ODA5MTQxLWNkNDAyN2EwYWIyNTM1YTg5MTFlNzg3YjgwNjc3N2Q0MTBjYWYzYmViZTA0YzY5MTczMjIwZWNmZDlmNTM1ZGI)
+!!! Success "Taking Lab Attendance"
+    A QR code will be given for each lab. Scanning the QR code will take you to a form to take roll. Open the link below on a lab machine (allow webcam access) to scan the QR code and fill out the form. <br><br>
+    
+    <iframe allow="camera" src="" style="width:100%; min-height:500px;"></iframe>
 
-## Taking Attendence
-A QR code will be given for each lab. Scanning the QR code will take you to a form to take roll. You can inatall a QR code scanner on you phone or use the folling sites on the lab machines.
+    <a href="javascript: let iframe = document.querySelector('iframe'); iframe.setAttribute('src', 'https://www.the-qrcode-generator.com/scan');">Open Scanner</a>
 
-<a href="https://www.the-qrcode-generator.com/scan" target="blank">Qr Code Scanner</a>
+    <a href="https://www.the-qrcode-generator.com/scan" target="blank">Click Here To open Separate Window</a> 
+
 
 ## Lab Assignments (Updated 15/02/2020)
 
 !!! warning "Changing Lab Streams"
-    If you need to change your assigned stream or you are not unassigned one; please fill out this <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeJyHCJg2nF-500p2K1C9mFoYzkGUkA1F6mTlX87KfXs1nwCA/viewform?usp=sf_link">Lab Form</a> to be reassigned.
+    If you need to change your assigned stream or you are not unassigned one; please fill out this ==<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeJyHCJg2nF-500p2K1C9mFoYzkGUkA1F6mTlX87KfXs1nwCA/viewform?usp=sf_link">LAB CLASH FORM</a>== to be reassigned.
 
 Lab Stream 1: Tuesday 8:00AM - 10:00AM CSL2<br/>
 Lab Stream 2: Wednesday 2:00PM - 4:00PM CSL2<br/>
